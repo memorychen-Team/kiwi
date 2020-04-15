@@ -19,9 +19,7 @@ abbr,acronym { border:0}
 body {
     font-size: 14px;
     text-align: center;
-    /*height: 7423px;*/
     font-family: '微软雅黑';
-    /*background-image: url(../images/home/bg.jpg);*/
     background-repeat: repeat-x;
 }
 table {
@@ -68,6 +66,9 @@ a:hover, a:active {
     border: none;
 }
 /*首页样式*/
+.headerBgTop{
+    background: #fc7b19;
+}
 .headerBg{
     background: #1a1a1a;
 }
@@ -75,7 +76,7 @@ a:hover, a:active {
     margin-bottom: 0;
 }
 .navbar-inner{
-    background: #1a1a1a;
+    background: #fc7b19;
     border: none;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -86,13 +87,14 @@ a:hover, a:active {
 }
 .navbar .nav>li>a{
     font-size: 1.2em;
-    color: #ffffff;
+    color: #333;
 }
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
-    color: #fff;
+    color: #333;
     font-size: 1.2em;
-    background-color: #1a1a1a;
-    border-bottom: 1px solid #a47e3c;
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom: 1px solid #fc7b19;
 }
 .navbar .nav.languageList li a{
     padding: 10px 4px 10px;
@@ -101,17 +103,23 @@ a:hover, a:active {
     height: 550px;
 }
 .moveImgContainer{
-    height: 974px;
-    background-image: url(../images/home/banner.jpg);
+    height: 580px;
     position: relative;
 }
+.bannerImgContainer{
+     height: 799px;
+     background: url(../images/home/1.jpg) center no-repeat;
+     height: 580px;
+     position: relative;
+ }
+
 .moveImgContainer img {
     width: 100%;
 }
 .bannerHeadline{
     text-align: center;
     font-size: 40px;
-    color: #fff;
+    color: #333;
     padding-top: 70px;
     width: 40%;
     margin: 0 auto;
@@ -121,19 +129,8 @@ a:hover, a:active {
 .bannerContent{
     width: 40%;
     margin: 35px auto;
-    color: #ffffff;
+    color: #333;
     line-height: 35px;
-}
-.triangle{
-    width:0px;
-    height:0px;
-    border-top:20px solid rgba(0,0,0,0);
-    border-right:20px solid  rgba(0,0,0,0);
-    border-bottom:20px solid #ffff;
-    border-left:20px solid  rgba(0,0,0,0);
-    position: absolute;
-    top: 96%;
-    left: 50%;
 }
 .headline{
     padding: 75px 0;
