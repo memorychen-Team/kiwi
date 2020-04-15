@@ -20,10 +20,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bootstrap/images/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bootstrap/js/swiper" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\GitHub\team\kiwi\bootstrap\js\swiper" />
       <recent name="C:\Users\Administrator\Desktop\GitHub\team\kiwi\bootstrap\images\home" />
     </key>
   </component>
@@ -37,11 +38,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586954786988</updated>
-      <workItem from="1586954789805" duration="5257000" />
+      <workItem from="1586954789805" duration="6950000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="219" key="FileChooserDialogImpl" timestamp="1586961097364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="219" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586961097364" />
   </component>
 </project>

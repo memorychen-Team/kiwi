@@ -6,11 +6,36 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="bootstrap/css/home.css">
     <link rel="stylesheet" href="bootstrap/dist/aos.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="bootstrap/js/swiper/package/css/swiper.min.css">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!--[if IE]>
     <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 500px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 <div>
@@ -66,6 +91,25 @@
     </div>
     <div class="row-fluid">
         <div class="bannerImgContainer">
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
     <div class="contentBoxContainer">
@@ -205,27 +249,15 @@
             </div>
         </div>
         <div class="row-fluid">
-<!--            <div class="bottomContainer">-->
-<!--                <div class="bottomContent">-->
-<!--                    <div class="noticeText">-->
-<!--                        <h2 class="text-center" style="font-size: 4em;">未来已来</h2>-->
-<!--                        <div class="text-center" style="line-height: 40px;font-size: 1.5em;padding-top: 5%;">-->
-<!--                            <span>在瞬息万变的中国传播与消费者环境下,</span><br/>-->
-<!--                            <span>我们的目标是超越期待并可持续的创新。</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="listBox">-->
-<!--                        <ul>-->
-<!--                            <li class="facebook"><a href=""></a></li>-->
-<!--                            <li class="ding"><a href=""></a></li>-->
-<!--                            <li class="inImg"><a href=""></a></li>-->
-<!--                            <li class="weibo"><a href=""></a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
             <div class="row-fluid">
                 <div class="span4 offset2">
+                    <div class="noticeText">
+                        <h2 class="text-left" style="font-size: 4em;">欢迎订阅最新资讯</h2>
+                        <div class="text-left" style="line-height: 40px;font-size: 1.5em;padding-top: 5%;">
+                            <span>在瞬息万变的中国传播与消费者环境下,</span><br/>
+                            <span>我们的目标是超越期待并可持续的创新。</span>
+                        </div>
+                    </div>
                     <form>
                         <div class="form-group">
                             <label for="exampleInputName">姓名</label>
@@ -271,6 +303,7 @@
     <script src="bootstrap/js/highlight.min.js"></script>
     <script src="bootstrap/dist/aos.js"></script>
     <script src="./bootstrap/js/home.js"></script>
+    <script src="bootstrap/js/swiper/package/js/swiper.min.js"></script>
     <script>
         AOS.init({
             easing: 'ease-out-back',
@@ -280,6 +313,14 @@
         // $('html, body').animate({
         //     scrollTop: $(window).height()
         // }, 1200);
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </div>
 </body>
