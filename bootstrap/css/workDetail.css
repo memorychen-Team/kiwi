@@ -1,0 +1,47 @@
+﻿.headerBg{
+    height: 668px;
+    background: url(../images/workDetail/1.jpg) center no-repeat;
+}
+.navbar{
+    margin-bottom: 0;
+}
+.navbar .brand{
+    color: #ffffff;
+}
+.navbar .nav>li>a{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.navbar-inner{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
+    background-color: transparent;
+    border-bottom: 1px solid #a47e3c;
+    box-shadow: none;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.navbar .nav.languageList li a{
+    padding: 10px 4px 10px;
+}
+.detailContainer{
+    height: 1791px;
+    background: url(../images/workDetail/bg.jpg) center no-repeat;
+}
+.swipeContainer{
+    background: url(../images/workDetail/2.jpg) center no-repeat;
+}
+.moreProjectOne{
+    background: url(../images/workDetail/3.jpg) center no-repeat;
+}
+.moreProjectTwo{
+    background: url(../images/workDetail/4.jpg) center no-repeat;
+}
+.moreProjectThree{
+    background: url(../images/workDetail/5.jpg) center no-repeat;
+}
