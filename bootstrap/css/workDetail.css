@@ -1,47 +1,114 @@
-﻿.headerBg{
-    height: 668px;
-    background: url(../images/workDetail/1.jpg) center no-repeat;
+﻿.header {
+    height: 80px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 2px solid #bd954f;
 }
-.navbar{
+
+.nav-bar2-container {
+    height: 80px;
+    line-height: 80px;
+    padding: 0 50px;
+    color: #000;
+    background-color: #fff;
+}
+
+.nav-bar {
+    float: right;
+    height: 100%;
+}
+
+.nav-bar a {
+    vertical-align: middle;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+}
+
+.nav-bar .dot {
+    vertical-align: middle;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 1px;
+}
+
+.nav-bar2-container .nav-bar a {
+    color: #000;
+}
+
+.nav-bar2-container .nav-bar .dot {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 1px;
+}
+
+.headerBg {
+    background-color: #000;
+}
+
+.navbar {
     margin-bottom: 0;
 }
-.navbar .brand{
+
+.navbar .brand {
     color: #ffffff;
 }
-.navbar .nav>li>a{
+
+.navbar .nav>li>a {
     font-size: 1.2em;
     color: #ffffff;
 }
-.navbar-inner{
+
+.navbar-inner {
     background: transparent;
     box-shadow: none;
     border: none;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
+
+.navbar .nav>.active>a,
+.navbar .nav>.active>a:hover,
+.navbar .nav>.active>a:focus {
     background-color: transparent;
     border-bottom: 1px solid #a47e3c;
     box-shadow: none;
     font-size: 1.2em;
     color: #ffffff;
 }
-.navbar .nav.languageList li a{
+
+.navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
-.detailContainer{
+
+.detailContainer {
     height: 1791px;
     background: url(../images/workDetail/bg.jpg) center no-repeat;
 }
-.swipeContainer{
+
+.swipeContainer {
     background: url(../images/workDetail/2.jpg) center no-repeat;
 }
-.moreProjectOne{
+
+.moreProjectOne {
     background: url(../images/workDetail/3.jpg) center no-repeat;
 }
-.moreProjectTwo{
+
+.moreProjectTwo {
     background: url(../images/workDetail/4.jpg) center no-repeat;
 }
-.moreProjectThree{
+
+.moreProjectThree {
     background: url(../images/workDetail/5.jpg) center no-repeat;
 }
