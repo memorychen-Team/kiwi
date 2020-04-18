@@ -18,7 +18,7 @@
     function initPageText () {
         var language = localStorage.getItem('language');
         if(language == 'en' || language == null) {
-            $('#headline').html(EN.headline);
+            // $('#headline').html(EN.headline);
             $('#subtitle').html(EN.subtitle);
             $('#brandStrategy').html(EN.brandStrategy);
             $('#brandStrategyContent').html(EN.brandStrategyContent);

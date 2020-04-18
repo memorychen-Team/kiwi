@@ -181,6 +181,7 @@ a:hover, a:active {
 .ourCapa{
     padding: 1.8em 0;
     font-size: 3em;
+    line-height: 1.8em;
     font-weight: bold;
 }
 .ourThink{
@@ -215,6 +216,7 @@ a:hover, a:active {
 /*底部样式*/
 .bannerBottomImgContainer{
     height: 850px;
+    margin-top: 2em;
     background: url(../images/home/bottonBanner.jpg) center no-repeat;
     position: relative;
     background-color: #e8442f;
@@ -279,4 +281,21 @@ a:hover, a:active {
 }
 .facebook{
     background: url(../images/home/12-1.png) center no-repeat;
+}
+.inWXContainer{
+    margin-left: 33%;
+    margin-top: 10%;
+}
+.leftIn{
+    display: inline-block;
+    height: 80px;
+    width: 86px;
+    margin-right: 5%;
+    background: url(../images/about/4.png) left no-repeat;
+}
+.rightWX{
+    display: inline-block;
+    height: 80px;
+    width: 86px;
+    background: url(../images/about/5.png) left no-repeat; 
 }
