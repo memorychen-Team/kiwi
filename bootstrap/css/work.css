@@ -1,6 +1,12 @@
 .headerBg{
     background: #0e0e0e;
 }
+.headlineTitle{
+    font-size: 2em!important;
+    text-align: center;
+    font-weight: bold;
+    line-height: 35px;
+}
 .navbar{
     margin-bottom: 0;
 }
@@ -8,7 +14,7 @@
     color: #ffffff;
 }
 .navbar .nav>li>a{
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #292929;
 }
 #myTab{
@@ -60,7 +66,7 @@ div.tab-content {
     background-color: transparent;
     border-bottom: 1px solid #a47e3c;
     box-shadow: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #0c0707;
 }
 .navbar .nav.languageList li a{
