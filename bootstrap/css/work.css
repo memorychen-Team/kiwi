@@ -2,16 +2,30 @@
     background: #0e0e0e;
 }
 .headlineTitle{
-    font-size: 2em!important;
+    font-size: 1.8em!important;
     text-align: center;
     font-weight: bold;
     line-height: 35px;
 }
+.headlineSubTitle{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+a.headlineSubTitle:hover{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
 .workContainerList{
     width: 100%;
-    height: 3125px;
+    height: 2800px;
+    position: relative;
 }
 .workContainerList li{
+    overflow: hidden;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 }
@@ -29,6 +43,19 @@
 .navbar .brand{
     color: #ffffff;
 }
+.dotList{
+    padding-left: 5%;
+    height: 40px;
+    line-height: 40px;
+}
+.dotList span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    vertical-align: middle;
+    border-radius: 100%;
+}
 .navbar .nav>li>a{
     font-size: 1.5em;
     color: #292929;
@@ -39,6 +66,16 @@
 #myTab li a{
     font-size: 1.2em;
     color: #333;
+}
+#workRadioList label{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+#workRadioList input[type="radio"]{
+    margin: 0;
+    margin-right: 15px;
+    font-size: 1.3em;
 }
 div.tab-content {
      overflow: hidden!important;
@@ -92,6 +129,46 @@ div.tab-content {
     height: 550px;
 }
 .workListContainer{
-    margin-top: 20px ;
-    margin-bottom: 20px ;
+    margin: 20px  10%;
+}
+.imgBox{
+    float: left;
+    width: 35%;
+    margin: 10px;
+}
+.detailBox{
+    float: left;
+    width: 40%;
+    margin: 10px;
+}
+.directBox{
+    float: left;
+    width: 18%;
+    margin: 10px;
+}
+.directionImg{
+    display: inline-block;
+    width: 91px;
+    height: 87px;
+    background: url(../images/work/direction.png) center no-repeat;
+}
+.learnMore{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+.directLink{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.upImgIcon{
+    display: inline-block;
+    width: 122px;
+    height: 122px;
+    background: orchid;
+    position: fixed;
+    bottom: 10px;
+    background: url(../images/work/up.png) center no-repeat;
 }
