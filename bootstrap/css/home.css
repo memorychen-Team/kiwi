@@ -67,7 +67,7 @@ a:hover, a:active {
 }
 /*首页样式*/
 .headerBgTop{
-    background: #fc7b19;
+    background: #e8442f;
 }
 .dotList{
     padding-left: 5%;
@@ -98,7 +98,7 @@ a:hover, a:active {
     margin-bottom: 0;
 }
 .navbar-inner{
-    background: #fc7b19;
+    background: #e8442f;
     border: none;
     padding: 10px 0;
 }
@@ -124,7 +124,7 @@ a:hover, a:active {
     height: 550px;
 }
 .moveImgContainer{
-    height: 580px;
+    height: 500px;
     position: relative;
 }
 .bannerImgContainer{
@@ -133,13 +133,20 @@ a:hover, a:active {
      height: 580px;
      position: relative;
  }
-
+.kiwiLabatory{
+    font-size: 2em;
+    font-weight: bold;
+}
+.kiwiOrder{
+    line-height: 2em;
+    font-family: sans-serif;
+}
 .moveImgContainer img {
     width: 100%;
 }
 .bannerHeadline{
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5em;
     color: #333;
     padding-top: 140px;
     width: 40%;
@@ -187,7 +194,7 @@ a:hover, a:active {
 }
 .ourCapa{
     padding: 1.8em 0;
-    font-size: 3em;
+    font-size: 3.5em;
     line-height: 1.8em;
     font-weight: bold;
 }
@@ -196,7 +203,7 @@ a:hover, a:active {
 }
 .ourThink h2{
     text-align: right;
-    padding-right: 20%;
+    padding-right: 25%;
 }
 /*轮播样式*/
 .swiper-container {
@@ -221,6 +228,22 @@ a:hover, a:active {
     align-items: center;
 }
 /*底部样式*/
+.kiwiBottomTitle{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subscrieTitle{
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+.futureTitle{
+    font-size: 1.5em;
+}
+.futureInfo{
+    line-height: 40px;
+    font-size: 1.5em;
+    padding-top: 2%;
+}
 .bannerBottomImgContainer{
     height: 850px;
     margin-top: 2em;
@@ -235,7 +258,7 @@ a:hover, a:active {
 .dividedLine{
     padding: 5%  2%;
     margin: 0 2%;
-    border-bottom: 3px solid #3333;
+    border-bottom: 2px solid #333;
 }
 .bottomContainer{
     width: 100%;
@@ -253,6 +276,9 @@ a:hover, a:active {
     color: #333;
 }
 .subscrieInco{
+    display: inline-block;
+    width: 23px;
+    height: 24px;
     background-image: url(../images/home/subscire.png);
 }
 .listBox ul{
