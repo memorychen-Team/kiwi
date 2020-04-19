@@ -6,8 +6,12 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/aos.css" />
     <link rel="stylesheet" href="bootstrap/css/work.css">
     <script src="bootstrap/js/work.js"></script>
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <div>
@@ -26,11 +30,11 @@
                 您的浏览器不支持 video 标签。
             </video>
         </div>
-        <div class="row-fluid">
+        <div class="row-fluid" style="border-bottom: 1px solid #f1ecec;">
             <div class="offset2 span4">
                 <div class="navbar">
                     <div class="navbar-inner">
-                        <a class="headlineSubTitle" href="./home.html">KIWI</a>
+                        <span class="logoKiwi"></span>
                     </div>
                 </div>
             </div>
@@ -63,7 +67,7 @@
         <div class="row-fluid" style="margin:2.5% 0;">
             <div class="offset8 span4">
                 <form action="" id="workRadioList"> 
-                    <label><input name="radioList" type="radio" value="" />全部</label> 
+                    <label><input name="radioList" type="radio" checked value="" />全部</label> 
                     <label><input name="radioList" type="radio" value="" />整合营销</label> 
                     <label><input name="radioList" type="radio" value="" />公关活动</label> 
                     <label><input name="radioList" type="radio" value="" />社会化营销</label> 
@@ -72,7 +76,7 @@
         </div>
         <div class="workListContainer">
             <ul class="workContainerList">
-                <li>
+                <li aos="fade-up">
                      <div class="imgBox">
                          <a href="./workDetail.html" class="directLink">
                              <img src="bootstrap/images/work/1.jpg" alt="">
@@ -91,7 +95,7 @@
                         </h4>
                      </div>
                 </li>
-                <li>
+                <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
                             <img src="bootstrap/images/work/1.jpg" alt="">
@@ -110,7 +114,7 @@
                        </h4>
                     </div>
                 </li>
-                <li>
+                <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
                             <img src="bootstrap/images/work/1.jpg" alt="">
@@ -129,7 +133,7 @@
                        </h4>
                     </div>
                 </li>
-                <li>
+                <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
                             <img src="bootstrap/images/work/1.jpg" alt="">
@@ -148,7 +152,7 @@
                        </h4>
                     </div>
                 </li>
-                <li>
+                <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
                             <img src="bootstrap/images/work/1.jpg" alt="">
@@ -167,7 +171,7 @@
                        </h4>
                     </div>
                 </li>
-                <li>
+                <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
                             <img src="bootstrap/images/work/1.jpg" alt="">
@@ -186,7 +190,7 @@
                        </h4>
                     </div>
                 </li>
-                <li>
+                <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
                             <img src="bootstrap/images/work/1.jpg" alt="">
@@ -209,5 +213,14 @@
             <span id='goBackUp' class="upImgIcon"></span>
         </div>
     </div>
+    <script src="bootstrap/js/highlight.min.js"></script>
+    <script src="bootstrap/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </html>

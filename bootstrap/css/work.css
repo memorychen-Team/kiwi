@@ -2,16 +2,22 @@
     background: #0e0e0e;
 }
 .headlineTitle{
-    font-size: 1.8em!important;
+    font-size: 1.6em!important;
     text-align: center;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 30px;
 }
 .headlineSubTitle{
     font-size: 1.8em;
     font-weight: bold;
     text-decoration: none;
     color: #333;
+}
+.logoKiwi{
+    display: inline-block;
+    width: 119px;
+    height: 64px;
+    background: url(../images/work/logo.png) center no-repeat; 
 }
 a.headlineSubTitle:hover{
     font-size: 1.8em;
@@ -31,8 +37,8 @@ a.headlineSubTitle:hover{
 }
 .dotIcon{
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     background: orangered;
     vertical-align: middle;
@@ -93,8 +99,7 @@ div.tab-content {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 15px 0;
 }
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
     background-color: transparent;
