@@ -94,7 +94,6 @@
 
 .detailContainer {
     height: 1250px;
-    background: #d6d6c6;
 }
 
 .swipeContainer {
@@ -156,6 +155,7 @@
     height: 122px;
     background: orchid;
     position: fixed;
+    z-index: 500;
     bottom: 20%;
     background: url(../images/work/up.png) center no-repeat;
 }
