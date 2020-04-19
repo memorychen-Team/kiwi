@@ -2,11 +2,10 @@
     height: 80px;
     line-height: 80px;
     padding: 0 50px;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 2.5em;
     color: #fff;
     background-color: #000;
-    border-bottom: 2px solid #bd954f;
+    border-bottom: 2px solid #e6e3dc;
 }
 
 .nav-bar2-container {
@@ -27,6 +26,7 @@
     font-size: 16px;
     color: #fff;
     padding: 5px;
+    text-decoration: none;
 }
 
 .nav-bar .dot {
@@ -68,6 +68,7 @@
 .navbar .nav>li>a {
     font-size: 1.2em;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .navbar-inner {
@@ -86,22 +87,32 @@
     box-shadow: none;
     font-size: 1.2em;
     color: #181515;
+    text-decoration: none;
 }
-
+.active{
+    border-bottom: 1px solid orangered;
+}
 .navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
-
+.dividerLine{
+    border-bottom: 1px solid #333;
+    margin: 0 5%;
+}
 .detailContainer {
     height: 1250px;
 }
-
+.swiperBox{
+    height: 465px;
+    margin-top: 50px;
+}
 .swipeContainer {
+    height: 465px;
     background: url(../images/workDetail/2.jpg) center no-repeat;
 }
 .dateBox{
     border-bottom: 2px solid #333;
-    margin: 20px 20%;
+    margin: 5% 15%;
     line-height: 40px;
 }
 .workContainerList{

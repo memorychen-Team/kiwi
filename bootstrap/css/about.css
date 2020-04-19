@@ -14,6 +14,9 @@
     line-height: 2em;
     font-size: 3em;
 }
+.active{
+    border-bottom: 1px solid orangered;
+}
 .navbar{
     margin-bottom: 0;
 }
