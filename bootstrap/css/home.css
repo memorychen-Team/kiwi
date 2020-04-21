@@ -86,7 +86,7 @@ a:hover, a:active {
     font-size: 3em;
     text-align: center;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 45px;
 }
 .headerBg{
     background: #1a1a1a;
@@ -100,14 +100,17 @@ a:hover, a:active {
 .navbar-inner{
     background: #e8442f;
     border: none;
-    padding: 10px 0;
+    padding: 5px 0;
+}
+#languageList{
+    padding: 5px;
 }
 .navbar-inner a.brand{
     font-size: 1.6em;
     color: #fff!important;
 }
 .navbar .nav>li>a{
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #333;
 }
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{

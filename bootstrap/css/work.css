@@ -2,7 +2,7 @@
     background: #0e0e0e;
 }
 .headlineTitle{
-    font-size: 1.6em!important;
+    font-size: 1.5em!important;
     text-align: center;
     font-weight: bold;
     line-height: 30px;
@@ -99,7 +99,7 @@ div.tab-content {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 15px 0;
+    padding: 8px 0;
 }
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
     background-color: transparent;

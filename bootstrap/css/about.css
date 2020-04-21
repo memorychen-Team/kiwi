@@ -1,5 +1,5 @@
 ﻿.headerBg{
-    height: 80px;
+    height: 63px;
     background: #e6e4e3;
     border-bottom: 2px solid #c58e796e;
 }
@@ -7,7 +7,7 @@
     font-size: 3em;
     text-align: center;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 42px;
 }
 .subTitle{
     margin: 4% 2% 3% 14%;
@@ -31,8 +31,7 @@
     background: transparent;
     box-shadow: none;
     border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px 0;
 }
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
     background-color: transparent;
