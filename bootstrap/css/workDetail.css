@@ -144,6 +144,9 @@
 .workContainerList li {
     overflow: hidden;
     border-top: 1px solid #333;
+}
+
+.workContainerList li:last-child {
     border-bottom: 1px solid #333;
 }
 
