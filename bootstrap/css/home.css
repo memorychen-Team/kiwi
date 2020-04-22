@@ -340,6 +340,9 @@ a:active {
     text-align: center;
     font-size: 18px;
     background: #fff;
+    width: 80%;
+
+    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -352,9 +355,13 @@ a:active {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-}
-
-
+  }
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
 /*底部样式*/
 
 .kiwiBottomTitle {

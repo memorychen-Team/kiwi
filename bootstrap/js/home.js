@@ -1,9 +1,11 @@
 ﻿$(document).ready(function() {
     // 轮播
     var swiper = new Swiper('.swiper-container', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
         },
     });
     handleClickEvent();
