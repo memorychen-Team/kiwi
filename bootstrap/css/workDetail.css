@@ -216,13 +216,13 @@
 /*底部订阅*/
 
 .bottomCommunication {
-    margin: 4% 2% 3% 14%;
+    margin: 4% 2% 3% 0%;
     line-height: 2em;
     font-size: 2em;
 }
 
 .subscrieInfo {
-    margin: 4% 2% 3% 14%;
+    margin: 4% 2% 3% 0%;
     line-height: 2em;
     font-size: 1.8em;
 }
@@ -239,7 +239,7 @@
 
 .subscrieImgContainer {
     height: 109px;
-    margin-left: 12%;
+    margin-left: 0%;
     background: url(../images/about/3.png) left no-repeat;
 }
 

@@ -1,58 +1,72 @@
-﻿.headerBg{
+﻿.headerBg {
     height: 63px;
     background: #e6e4e3;
     border-bottom: 2px solid #c58e796e;
 }
-.headlineTitle{
+
+.headlineTitle {
     font-size: 3em;
     text-align: center;
     font-weight: bold;
     line-height: 42px;
 }
-.subTitle{
+
+.subTitle {
     margin: 4% 2% 3% 14%;
     line-height: 2em;
     font-size: 3em;
 }
-.active{
+
+.active {
     border-bottom: 1px solid orangered;
 }
-.navbar{
+
+.navbar {
     margin-bottom: 0;
 }
-.navbar .brand{
+
+.navbar .brand {
     color: #333;
 }
-.navbar .nav>li>a{
+
+.navbar .nav>li>a {
     font-size: 1.2em;
     color: #333;
 }
-.navbar-inner{
+
+.navbar-inner {
     background: transparent;
     box-shadow: none;
     border: none;
     padding: 10px 0;
 }
-.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus{
+
+.navbar .nav>.active>a,
+.navbar .nav>.active>a:hover,
+.navbar .nav>.active>a:focus {
     background-color: transparent;
     border-bottom: 1px solid #a47e3c;
     box-shadow: none;
     font-size: 1.2em;
     color: #333;
 }
-.navbar .nav.languageList li a{
+
+.navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
-.aboutContainer{
-    height: 2880px;
+
+.aboutContainer {
+    height: 3060px;
     background-color: #f5f3f0;
     /* background: url(../images/about/2.jpg) center no-repeat; */
 }
-.dotList{
+
+.dotList {
     height: 40px;
     line-height: 40px;
 }
-.dotList span{
+
+.dotList span {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -60,7 +74,8 @@
     vertical-align: middle;
     border-radius: 100%;
 }
-.dotIcon{
+
+.dotIcon {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -68,56 +83,68 @@
     background: orangered;
     vertical-align: middle;
 }
-.introductionInfo{
+
+.introductionInfo {
     margin: 10% 30% 10% 45%;
 }
-.aboutContent{
+
+.aboutContent {
     line-height: 3;
     margin: 10px;
     padding: 20px;
 }
-.customerInfo{
+
+.customerInfo {
     margin: 10% 30% 10% 15%;
 }
-.dividedLine{
+
+.dividedLine {
     border-bottom: 2px solid #333;
 }
-.bottomCommunication{
-    margin: 4% 2% 3% 14%;
+
+.bottomCommunication {
+    margin: 4% 2% 3% 0;
     line-height: 2em;
     font-size: 2em;
 }
-.subscrieInfo{
-    margin: 4% 2% 3% 14%;
+
+.subscrieInfo {
+    margin: 4% 2% 3% 0;
     line-height: 2em;
     font-size: 1.8em;
 }
-.abooutImgContainer{
+
+.abooutImgContainer {
     height: 640px;
     background: url(../images/about/1.jpg) center no-repeat;
 }
-.customeImgContainer{
+
+.customeImgContainer {
     height: 613px;
     background: url(../images/about/2.png) center no-repeat;
 }
-.subscrieImgContainer{
+
+.subscrieImgContainer {
     height: 109px;
-    margin-left: 12%;
+    margin-left: 0;
     background: url(../images/about/3.png) left no-repeat;
 }
-.inWXContainer{
+
+.inWXContainer {
     margin-left: 15%;
 }
-.leftIn{
+
+.leftIn {
     display: inline-block;
     height: 80px;
     width: 86px;
     margin-right: 5%;
     background: url(../images/about/4.png) left no-repeat;
 }
-.rightWX{
+
+.rightWX {
     display: inline-block;
     height: 80px;
     width: 86px;
-    background: url(../images/about/5.png) left no-repeat; 
+    background: url(../images/about/5.png) left no-repeat;
 }

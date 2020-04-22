@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>about</title>
@@ -8,6 +9,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href='bootstrap/css/about.css'>
 </head>
+
 <body>
     <div>
         <div class="row-fluid headerBg">
@@ -41,34 +43,28 @@
         <div class="row-fluid aboutContainer">
             <div>
                 <h2 class="subTitle">
-                    KIWI <br/>
-                    COMMUNICATION
+                    KIWI <br/> COMMUNICATION
                 </h2>
             </div>
             <div class="span7 offset4">
-               <h2 class="introductionInfo">我&nbsp;们&nbsp;是&nbsp;谁
-               <span class="dotIcon"></span></h2>
-               <div>
-                   <p class="aboutContent">
-                    燕子去了，有再来的时候；杨柳枯了，有再青的时候；桃花谢了，有再开的时 候。但是，聪明的，你告诉我，我们的日子为什么一去不复返呢？——是有人偷了他 们罢：那是谁？又藏在何处呢？是他们自己逃走了罢——如今又到了哪里呢？
-
-                    我不知道他们给了我多少日子，但我的手确乎是渐渐空虚了。在默默里算着，八千多日子已经从我手中溜去，像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音，也没有影子。我不禁头涔涔而泪潸潸了。
-                    
-                    去的尽管去了，来的尽管来着；去来的中间，又怎样地匆匆呢？早上我起来的时候，小屋里射进两三方斜斜的太阳。太阳他有脚啊，轻轻悄悄地挪移了；我也茫茫然跟着旋转。于是——洗手的时候，日子从水盆里过去；吃饭的时候，日子从饭碗里过去；默默时，便从凝然的双眼前过去。
-                    
-                    我觉察他去的匆匆了，伸出手遮挽时，他又从遮挽着的手边过去，天黑时，我躺在床上，他便伶伶俐俐地从我身上跨过，从我脚边飞去了。等我睁开眼和太阳再见，这算又溜走了一日。我掩着面叹息。但是新来的日子的影儿又开始在叹息里闪过了。
-                   </p>
-               </div>
-               <div class="abooutImgContainer"></div>
+                <h2 class="introductionInfo">我&nbsp;们&nbsp;是&nbsp;谁
+                    <span class="dotIcon"></span></h2>
+                <div>
+                    <p class="aboutContent">
+                        燕子去了，有再来的时候；杨柳枯了，有再青的时候；桃花谢了，有再开的时 候。但是，聪明的，你告诉我，我们的日子为什么一去不复返呢？——是有人偷了他 们罢：那是谁？又藏在何处呢？是他们自己逃走了罢——如今又到了哪里呢？ 我不知道他们给了我多少日子，但我的手确乎是渐渐空虚了。在默默里算着，八千多日子已经从我手中溜去，像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音，也没有影子。我不禁头涔涔而泪潸潸了。 去的尽管去了，来的尽管来着；去来的中间，又怎样地匆匆呢？早上我起来的时候，小屋里射进两三方斜斜的太阳。太阳他有脚啊，轻轻悄悄地挪移了；我也茫茫然跟着旋转。于是——洗手的时候，日子从水盆里过去；吃饭的时候，日子从饭碗里过去；默默时，便从凝然的双眼前过去。
+                        我觉察他去的匆匆了，伸出手遮挽时，他又从遮挽着的手边过去，天黑时，我躺在床上，他便伶伶俐俐地从我身上跨过，从我脚边飞去了。等我睁开眼和太阳再见，这算又溜走了一日。我掩着面叹息。但是新来的日子的影儿又开始在叹息里闪过了。
+                    </p>
+                </div>
+                <div class="abooutImgContainer"></div>
             </div>
             <div class="span11">
                 <h2 class="customerInfo">我&nbsp;们&nbsp;的&nbsp;客&nbsp;户
-                <span class="dotIcon"></span></h2>
+                    <span class="dotIcon"></span></h2>
                 <div class="customeImgContainer"></div>
-             </div>
-             <div class="span11" class="dividedLine"></div>
-             <div>
-                <div class="span6">
+            </div>
+            <div class="span11" class="dividedLine"></div>
+            <div>
+                <div class="offset2 span4">
                     <div>
                         <h2 class="bottomCommunication">
                             KIWI COMMUNICATION
@@ -76,10 +72,29 @@
                         <h2 class="subscrieInfo">
                             欢迎订阅最新资讯
                         </h2>
-                        <div class="subscrieImgContainer"></div>
+                        <div class="subscrieImgContainer" id="subscribeBtn"></div>
+                        <form id="userInfoBox" style="display: none;">
+                            <div class="form-group">
+                                <label for="exampleInputName">姓名</label>
+                                <input type="password" class="form-control" id="exampleInputName" placeholder="姓名">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPhone">手机</label>
+                                <input type="password" class="form-control" id="exampleInputPhone" placeholder="手机">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">公司</label>
+                                <input type="email" class="form-control" id="exampleInputCompany" placeholder="公司">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">邮箱</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱">
+                            </div>
+                            <button type="submit" class="btn" style="background: #e8442f;color: #fff;">提交</button>
+                        </form>
                     </div>
-                 </div>
-                 <div class="offset2 span4">
+                </div>
+                <div class="offset2 span4">
                     <div>
                         <h2 class="bottomCommunication">
                             KIWI COMMUNICATION
@@ -92,9 +107,11 @@
                             <span class="rightWX"></span>
                         </div>
                     </div>
-                 </div>
-             </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="bootstrap/js/about.js"></script>
 </body>
+
 </html>

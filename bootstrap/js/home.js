@@ -1,4 +1,4 @@
-﻿$(document).ready(function(){
+﻿$(document).ready(function() {
     // 轮播
     var swiper = new Swiper('.swiper-container', {
         navigation: {
@@ -8,23 +8,25 @@
     });
     handleClickEvent();
     initPageText();
-    function  handleClickEvent () {
-        $("#chinese").click(function(){
-            localStorage.setItem('language','cn');
+
+    function handleClickEvent() {
+        $("#chinese").click(function() {
+            localStorage.setItem('language', 'cn');
             initPageText();
         });
-        $("#english").click(function(){
-            localStorage.setItem('language','en');
+        $("#english").click(function() {
+            localStorage.setItem('language', 'en');
             initPageText();
         });
-        $("#navList li").click(function(){
+        $("#navList li").click(function() {
             $("#navList li").removeClass('active');
             $(this).addClass('active');
         });
     }
-    function initPageText () {
+
+    function initPageText() {
         var language = localStorage.getItem('language');
-        if(language == 'en' || language == null) {
+        if (language == 'en' || language == null) {
             // $('#headline').html(EN.headline);
             $('#subtitle').html(EN.subtitle);
             $('#brandStrategy').html(EN.brandStrategy);
@@ -49,7 +51,7 @@
             $('#resourceMatrixContent').html(EN.resourceMatrixContent);
             $('#kiwiLab').html(EN.kiwiLab);
             $('#kiwiLabContent').html(EN.kiwiLabContent);
-        } else if(language == 'cn') {
+        } else if (language == 'cn') {
             $('#headline').html(CN.headline);
             $('#subtitle').html(CN.subtitle);
             $('#brandStrategy').html(CN.brandStrategy);
@@ -76,4 +78,8 @@
             $('#kiwiLabContent').html(CN.kiwiLabContent);
         }
     }
+    // 订阅
+    $("#subscribeBtn").click(function(e) {
+        $("#userInfoBox").toggle();
+    });
 });
