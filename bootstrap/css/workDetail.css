@@ -9,9 +9,9 @@
 }
 
 .bannerContainer {
-    height: 400px;
+    height: 450px;
     background: #171616;
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 .bannerContainer h2 {
@@ -35,7 +35,7 @@
 
 .nav-bar a {
     vertical-align: middle;
-    font-size: 16px;
+    font-size: 1.5em;
     color: #fff;
     padding: 5px;
     text-decoration: none;
@@ -203,7 +203,7 @@
     background: orchid;
     position: fixed;
     z-index: 500;
-    bottom: 20%;
+    bottom: 5%;
     background: url(../images/work/up.png) center no-repeat;
 }
 
