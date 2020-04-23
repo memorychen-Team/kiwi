@@ -30,5 +30,23 @@
     kiwilab_content: "This is KIWI's innovative marketing laboratory, which provides strategic research, data insight, and innovative cooperation methods for industry trends, creating more possibilities for independent Chinese public relations companies.",
     future_one:'The future has come,',
     future_two:'In the rapidly changing environment of Chinese communication and consumers,',
-    future_three:'Our goal is to exceed expectations and sustainable innovation.'
+    future_three:'Our goal is to exceed expectations and sustainable innovation.',
+    /**关于我们 */
+    about_kiwi:'About KIWI',
+    aboutus_intro_one: 'Industry Pioneers of Lifestyle Brand Communications & Integrated Marketing Boundless Enthusiasm, Infinite Originality',
+    aboutus_intro_two: "Founded in 2013, KIWI is a public relations strategy consulting agency specialized in the lifestyle industry. Our innovative thinking and cross-industry resources have created valued services for brands. We work alongside with the world best brands and partners bringing PR Marketing solutions that are always beyond expectations",
+    aboutus_intro_three: 'KIWI owns various and dynamic teams. We specialize in fresh ideas, creating boundless enthusiasm and vigor to bring the most vivid and exciting PR & Marketing solutions and experiences. ',
+    aboutus_intro_four: "We provide 360 degree public relations and communications consulting services to clients, as well as bringing the most fresh trends into China and strategically positioning our clients in global range. Our​ core strengths include brand strategic communication, digital marketing, creative event planning and management, media relations, social media marketing, brand building and corporate strategic planning, crisis management, resource integration and cross-brand integrated marketing, film entertainment resources and project management.",
+    /**加入我们 */
+    joinus: 'Join KIWI',
+    join_intro_one: 'Understand the Lifestyle, Life the Lifestyle',
+    join_intro_two: 'Looking forward to creating the beautiful life together with you',
+    position_one: 'Account Manager, Integrated Marketing',
+    position_two: 'Account Manager',
+    position_three: 'Senior Account Executive',
+    position_four: 'Account Manager, Strategy Consulting',
+    position_five: 'Senior Account Executive, Digital Marketing',
+    position_six: 'Event Executive',
+    position_seven: '-Senior 3D Creative Designer',
+    email_address: 'Please send CV to: hr@kiwipr.com.cn'
 }
