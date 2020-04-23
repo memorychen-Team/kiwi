@@ -133,6 +133,9 @@
 .inWXContainer {
     margin-left: 15%;
 }
+#userInfoBox{
+    display: none;
+}
 
 .leftIn {
     display: inline-block;
@@ -141,7 +144,11 @@
     margin-right: 5%;
     background: url(../images/about/4.png) left no-repeat;
 }
-
+.leftIn a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 .rightWX {
     display: inline-block;
     height: 80px;

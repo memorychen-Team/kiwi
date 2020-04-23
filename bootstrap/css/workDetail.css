@@ -115,19 +115,13 @@
     margin: 0 6%;
 }
 
-
-/* .detailContainer {
-    height: 1250px;
-} */
-
 .swiperBox {
-    height: 465px;
+    height: 630px;
     margin-top: 50px;
 }
 
 .swipeContainer {
-    height: 465px;
-    background: url(../images/workDetail/2.jpg) center no-repeat;
+    height: 630px;
 }
 
 .dateBox {
