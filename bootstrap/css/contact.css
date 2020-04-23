@@ -1,3 +1,30 @@
+/*
+*阿里字体包
+*/
+@font-face{
+    font-family: "Al-Bold";
+    src:url('../font/Alibaba-PuHuiTi-Bold.ttf');
+}
+@font-face{
+    font-family: "Al-Heavy";
+    src:url('../font/Alibaba-PuHuiTi-Heavy.ttf');
+}
+@font-face{
+    font-family: "Al-Ligth";
+    src:url('../font/Alibaba-PuHuiTi-Light.ttf');
+}
+@font-face{
+    font-family: "Al-Medium";
+    src:url('../font/Alibaba-PuHuiTi-Medium.ttf');
+}
+@font-face{
+    font-family: "Al-Regular";
+    src:url('../font/Alibaba-PuHuiTi-Regular.ttf');
+}
+@font-face{
+    font-family: "Al-HelveticaNeue";
+    src:url('../font/HelveticaNeue.ttc');
+}
 .headerBg {
     height: 63px;
     background: #e6e4e3;
