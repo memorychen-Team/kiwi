@@ -52,6 +52,7 @@
 
 .nav-bar2-container .nav-bar a {
     color: #000;
+    font-size: 1.5em;
 }
 
 .nav-bar2-container .nav-bar .dot {
@@ -217,7 +218,9 @@
 
 
 /*底部订阅*/
-
+#userInfoBox{
+    display: none;
+}
 .bottomCommunication {
     margin: 4% 2% 3% 0%;
     line-height: 2em;
@@ -264,8 +267,36 @@
     width: 86px;
     background: url(../images/about/5.png) left no-repeat;
 }
-
-
+.leftIn a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.activeDesc{
+    margin: 16% 0;
+}
+.activeResult{
+    text-align: right;
+    margin: 10% 0;
+}
+.activeContent{
+    line-height: 38px;
+}
+.chinaAddMount{
+    font-size: 2.5em;
+    color: orangered;
+    font-weight: bold;
+}
+.chinaAddMountTwo{
+    font-size: 2.5em;
+    color: orangered;
+    font-weight: bold;
+}
+.chinaAddMountThree{
+    font-size: 2.5em;
+    color: orangered;
+    font-weight: bold;
+}
 /*轮播*/
 
 .swiper-container {
