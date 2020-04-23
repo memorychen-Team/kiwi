@@ -282,9 +282,10 @@ a:active {
     margin-top: 30px;
 }
 
-.contentBoxContainer {
+
+/* .contentBoxContainer {
     height: 1300px;
-}
+} */
 
 .detailList ul {
     height: 6957px;
@@ -342,7 +343,6 @@ a:active {
     font-size: 18px;
     background: #fff;
     width: 80%;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -356,13 +356,17 @@ a:active {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
-  .swiper-slide:nth-child(2n) {
+}
+
+.swiper-slide:nth-child(2n) {
     width: 60%;
-  }
-  .swiper-slide:nth-child(3n) {
+}
+
+.swiper-slide:nth-child(3n) {
     width: 40%;
-  }
+}
+
+
 /*底部样式*/
 
 .kiwiBottomTitle {

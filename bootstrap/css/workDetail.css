@@ -2,7 +2,7 @@
     height: 63px;
     line-height: 63px;
     padding: 0 50px;
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: #fff;
     background-color: #000;
     border-bottom: 2px solid #e6e3dc;
@@ -35,7 +35,6 @@
 
 .nav-bar a {
     vertical-align: middle;
-    font-size: 1.5em;
     color: #fff;
     padding: 5px;
     text-decoration: none;
@@ -112,12 +111,13 @@
 
 .dividerLine {
     border-bottom: 1px solid #333;
-    margin: 0 5%;
+    margin: 0 6%;
 }
 
-.detailContainer {
+
+/* .detailContainer {
     height: 1250px;
-}
+} */
 
 .swiperBox {
     height: 465px;
