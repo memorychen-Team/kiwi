@@ -53,6 +53,12 @@
             $('#resourceMatrixContent').html(EN.resourceMatrixContent);
             $('#kiwiLab').html(EN.kiwiLab);
             $('#kiwiLabContent').html(EN.kiwiLabContent);
+            // 4-23
+            $("#bannerIntro").html(EN.compant_intro)
+            $("#kiwilab_content").html(EN.kiwilab_content)
+            $("#future_one").html(EN.future_one)
+            $("#future_two").html(EN.future_two)
+            $("#future_three").html(EN.future_three)
         } else if (language == 'cn') {
             $('#headline').html(CN.headline);
             $('#subtitle').html(CN.subtitle);
@@ -78,6 +84,12 @@
             $('#resourceMatrixContent').html(CN.resourceMatrixContent);
             $('#kiwiLab').html(CN.kiwiLab);
             $('#kiwiLabContent').html(CN.kiwiLabContent);
+            // 4-23
+            $("#bannerIntro").html(CN.compant_intro)
+            $("#kiwilab_content").html(CN.kiwilab_content)
+            $("#future_one").html(CN.future_one)
+            $("#future_two").html(CN.future_two)
+            $("#future_three").html(CN.future_three)
         }
     }
     // 订阅

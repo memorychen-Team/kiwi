@@ -264,6 +264,7 @@ a:active {
 
 .navbar .nav.languageList li a {
     padding: 10px 4px 10px;
+    font-size: 1.1em;
 }
 
 .videoContainer {
@@ -293,7 +294,7 @@ a:active {
     top:60%;
     right: 10%;
     width: 25%;
-    font-family: sans-serif;
+    font-family: 'AL-Regular';
 }
 
 .moveImgContainer img {

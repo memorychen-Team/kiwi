@@ -23,5 +23,12 @@
     resourceMatrix: 'Resource matrix',
     resourceMatrixContent: 'Data analysis-oriented media and opinion leader resource platforms, as well as social elite and celebrity star resources, will bring insight, creativity and great value to customers.',
     kiwiLab: 'Kiwi Lab',
-    kiwiLabContent: 'This is a marketing innovation laboratory that KIWI is fully committed to, providing strategic research on industry trends, data insights, and innovative cooperation methods to create more possibilities for independent PR companies in China.'
+    kiwiLabContent: 'This is a marketing innovation laboratory that KIWI is fully committed to, providing strategic research on industry trends, data insights, and innovative cooperation methods to create more possibilities for independent PR companies in China.',
+    video_title_one: 'MADE FOR IMPACT',
+    video_title_two: 'BORN TO INSPIRE',
+    compant_intro: "Global vision, China's innovation, Symbiosis and Win-Win. KIWI is a public relations strategy consultancy that is deeply involved in the premium lifestyle field. We are committed to becoming a pioneer in integrated marketing in China, helping brands to achieve business goals, linking resources and creating remarkable value for brands.",
+    kiwilab_content: "This is KIWI's innovative marketing laboratory, which provides strategic research, data insight, and innovative cooperation methods for industry trends, creating more possibilities for independent Chinese public relations companies.",
+    future_one:'The future has come,',
+    future_two:'In the rapidly changing environment of Chinese communication and consumers,',
+    future_three:'Our goal is to exceed expectations and sustainable innovation.'
 }
