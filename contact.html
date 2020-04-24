@@ -109,25 +109,24 @@
                         <h2 class="subscrieInfo" style="margin: 0">
                             欢迎订阅最新资讯<span class="subscrieInco" style="margin-left: 90px;"></span>
                         </h2>
-                        <div class="subscrieImgContainer" id="subscribeBtn" style="margin-top: 100px;"></div>
-                        <form id="userInfoBox" style="display: none;">
+                        <div class="subscrieImgContainer" id="subscribeBtn" style="margin-top: 60px;"></div>
+                        <form id="userInfoBox">
                             <div class="form-group">
-                                <label for="exampleInputName">姓名</label>
-                                <input type="password" class="form-control" id="exampleInputName" placeholder="姓名">
+                                <span>*</span>&nbsp;姓名：<input class="inputNode" type="password" class="form-control" id="exampleInputName">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPhone">手机</label>
-                                <input type="password" class="form-control" id="exampleInputPhone" placeholder="手机">
+                                <span>*</span>&nbsp;手机：<input class="inputNode" type="password" class="form-control" id="exampleInputPhone">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">公司</label>
-                                <input type="email" class="form-control" id="exampleInputCompany" placeholder="公司">
+                                <span>*</span>&nbsp;公司：<input class="inputNode" type="text" class="form-control" id="exampleInputCompany">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">邮箱</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱">
+                                <span>*</span>&nbsp;邮箱：<input class="inputNode" type="email" class="form-control" id="exampleInputEmail1">
                             </div>
-                            <button type="submit" class="btn" style="background: #e8442f;color: #fff;">提交</button>
+                            <div class="form-group">
+                                <span>*</span>&nbsp;留言：<textarea type="textarea" rows="3" cols="10" class="form-control inputNote" id="exampleInputNote"></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="background: #e8442f;color: #fff;margin: 10px;">提交</button>
                         </form>
                     </div>
                 </div>

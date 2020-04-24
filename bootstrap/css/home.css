@@ -258,7 +258,7 @@ a:active {
 .navbar .nav>.active>a:focus {
     color: #333;
     font-size: 1.5em;
-    background-color: #fff;
+    background-color: #ededed;
     box-shadow: none;
     border-bottom: 1px solid #fc7b19;
 }

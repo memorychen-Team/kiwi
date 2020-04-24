@@ -12,6 +12,18 @@
     <!--[if IE]>
     <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
+    <style>
+        /* 禁止出现滚动条 */
+        body::-webkit-scrollbar { 
+            width: 0 !important 
+        }
+        /* 处理视频 */
+        video::-webkit-media-controls {
+            display:none !important;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none; 
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -30,7 +42,7 @@
                 <br>
                 <H3 class="communicationText">COMMUNICATIONS</H3>
             </div>
-            <video controls="controls" autoplay="autoplay" id="videoBox">
+            <video controls="controls" class='videoStyle' autoplay="autoplay" style="object-fit: cover;width: 1920px;height: 952px;" loop id="videoBox">
                 <source src="bootstrap/video/2.mp4" type="video/mp4" />
                 您的浏览器不支持 video 标签。
             </video>
