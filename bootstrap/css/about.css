@@ -27,8 +27,8 @@
 }
 .headerBg {
     height: 63px;
-    background: #e6e4e3;
-    border-bottom: 2px solid #c58e796e;
+    background: #f5f3f0;
+    border-bottom: 2px solid #ffc9b5;
 }
 
 .headlineTitle {
@@ -39,9 +39,9 @@
 }
 
 .subTitle {
-    margin: 4% 2% 3% 14%;
-    line-height: 2em;
-    font-size: 3em;
+    margin: 3% 2% 3% 4%;
+    line-height: 1.3em;
+    font-size: 5em;
 }
 
 .active {
@@ -59,6 +59,7 @@
 .navbar .nav>li>a {
     font-size: 1.2em;
     color: #333;
+    font-weight: bold;
 }
 
 .navbar-inner {
@@ -67,7 +68,12 @@
     border: none;
     padding: 10px 0;
 }
-
+.subscrieInco {
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+    background-image: url(../images/home/subscire.png);
+}
 .navbar .nav>.active>a,
 .navbar .nav>.active>a:hover,
 .navbar .nav>.active>a:focus {
@@ -95,34 +101,35 @@
 
 .dotList span {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: orangered;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
     vertical-align: middle;
     border-radius: 100%;
 }
 
 .dotIcon {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     background: orangered;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .introductionInfo {
-    margin: 10% 30% 10% 45%;
+    margin: 10% 1% 10% 45%;
 }
 
 .aboutContent {
-    line-height: 3;
-    margin: 10px;
-    padding: 20px;
+    line-height: 2;
+    font-weight: bold;
+    /*margin: 10px;*/
+    /*padding: 20px;*/
 }
 
 .customerInfo {
-    margin: 10% 30% 10% 15%;
+    margin: 5% 12% 4% 2%;
 }
 
 .dividedLine {
@@ -144,6 +151,7 @@
 .abooutImgContainer {
     height: 640px;
     background: url(../images/about/1.jpg) center no-repeat;
+    background-size: 100%;
 }
 
 .customeImgContainer {

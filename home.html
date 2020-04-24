@@ -10,6 +10,33 @@
     <link rel="stylesheet" href="bootstrap/js/swiper/package/css/swiper.min.css">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        /* 禁止出现滚动条 */
+        body::-webkit-scrollbar { 
+            width: 0 !important 
+        }
+        /* 处理视频 */
+        video::-webkit-media-controls {
+            display:none !important;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none; 
+        }
+        .bannerImgContainer {
+            height: 580px;
+            background-size: cover;
+            position: relative;
+            width: 60%;
+            margin: auto;
+        }
+        .dingyue {
+            font-size: 24px;
+            border: 1px solid #000;
+            width: fit-content;
+            padding: 1px 13px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +72,7 @@
                     <br>
                     <H3 class="videoCommunication">COMMUNICATIONS</H3>
                 </div>
-                <video controls="controls" autoplay="autoplay" style="width: 100%;height: 600px;object-fit: cover;">
+                <video controls="controls" class='videoStyle' autoplay="autoplay" style="object-fit: cover;" loop>
                 <source src="bootstrap/video/1.mp4" type="video/mp4" />
                 您的浏览器不支持 video 标签。
             </video>
@@ -132,6 +159,9 @@
                             <h3 class="text-left kiwiBottomTitle">KIWI COMMUNICATION</h2>
                                 <h4 class="text-left subscrieTitle" id="subscribeBtn">欢迎订阅最新资讯 <span class="subscrieInco"></span></h2>
                         </div>
+                        <div class="dingyue">
+                            点击订阅
+                        </div>
                         <form id="userInfoBox">
                             <div class="form-group">
                                 <label for="exampleInputName">姓名</label>
@@ -188,5 +218,50 @@
         <script src="./bootstrap/js/home.js"></script>
     </div>
 </body>
+<script>
+var winWidth = 0;
+var winHeight = 0;
+ //函数：获取尺寸
+function findDimensions() {
+        //获取窗口宽度
+        if (window.innerWidth)
+            winWidth = window.innerWidth;
+            else if ((document.body) && (document.body.clientWidth))
+            winWidth = document.body.clientWidth;
+            //获取窗口高度
+            if (window.innerHeight)
+            winHeight = window.innerHeight;
+            else if ((document.body) && (document.body.clientHeight))
+            winHeight = document.body.clientHeight;
+            //通过深入Document内部对body进行检测，获取窗口大小
+            if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+            {
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth;
+            document.getElementsByClassName("videoStyle")[0].style.width = winWidth + 'px'
+            document.getElementsByClassName("videoStyle")[0].style.height = winHeight + 'px'
+            document.getElementById("videoContainer").style.width = winWidth + 'px'
+            document.getElementById("videoContainer").style.height = winHeight + 'px'
+            }
+        }
+        findDimensions();
+        //调用函数，获取数值
+        window.onresize=findDimensions;
+        //监听浏览器滚动事件
+        // window.addEventListener("scroll", function () {
+        //     console.log(13)
+        //     // console.log(document.body.scrollTop)
+        //     // console.log(document.documentElement.scrollTop)
+        //     // document.documentElement.scrollTop || document.body.scrollTop
+        //     if(document.documentElement.scrollTop > 10){
+        //         console.log(13)
+        //           console.log(document.documentElement.scrollTop)
+        //           document.getElementById("videoContainer").style.display = 'none'
+        //     }
 
+        //     if(document.documentElement.scrollTop == 0){
+        //         document.getElementById("videoContainer").style.display = 'block'
+        //     }
+        // })
+</script>
 </html>

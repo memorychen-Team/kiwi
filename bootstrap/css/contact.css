@@ -27,8 +27,8 @@
 }
 .headerBg {
     height: 63px;
-    background: #e6e4e3;
-    border-bottom: 2px solid #c58e796e;
+    background: #f5f3f0;
+    border-bottom: 2px solid #ffc9b5;
 }
 
 .headlineTitle {
@@ -39,11 +39,16 @@
 }
 
 .subTitle {
-    margin: 4% 2% 3% 1%;
-    line-height: 2em;
-    font-size: 3em;
+    margin: 0 2% 3% 1%;
+    line-height: 1.2em;
+    font-size: 7em;
 }
-
+.subscrieInco {
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+    background-image: url(../images/home/subscire.png);
+}
 .active {
     border-bottom: 1px solid orangered;
 }
@@ -59,6 +64,7 @@
 .navbar .nav>li>a {
     font-size: 1.2em;
     color: #333;
+    font-weight: bold;
 }
 
 .navbar-inner {
@@ -100,17 +106,17 @@
 
 .dotList span {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: orangered;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
     vertical-align: middle;
     border-radius: 100%;
 }
 
 .dotIcon {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 100%;
     background: orangered;
     vertical-align: middle;
@@ -149,10 +155,11 @@
     height: 66px;
     margin-top: 8%;
     background: url(../images/contact/2.png) left no-repeat;
+    background-size: 66%;
 }
 
 .contactUsContainer {
-    height: 500px;
+    height: 700px;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
 }
@@ -161,6 +168,7 @@
     height: 109px;
     margin-left: 0;
     background: url(../images/about/3.png) left no-repeat;
+    background-size: 25%;
 }
 
 .inWXContainer {
@@ -170,7 +178,7 @@
 .leftIn {
     display: inline-block;
     height: 80px;
-    width: 86px;
+    width: 135px;
     margin-right: 5%;
     background: url(../images/about/4.png) left no-repeat;
 }

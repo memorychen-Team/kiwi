@@ -29,6 +29,7 @@ $(document).ready(function() {
             $("#aboutus_intro_two").html(CN.aboutus_intro_two)
             $("#aboutus_intro_three").html(CN.aboutus_intro_three)
             $("#aboutus_intro_four").html(CN.aboutus_intro_four)
+            $("#aboutus_intro_five").html(CN.aboutus_intro_five)
         }
     }
     // 订阅
