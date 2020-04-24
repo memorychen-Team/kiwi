@@ -264,7 +264,7 @@ div.tab-content {
     height: 122px;
     background: orchid;
     position: fixed;
-    bottom: 10px;
+    top: 85%;
     background: url(../images/work/up.png) center no-repeat;
 }
 

@@ -196,7 +196,9 @@ a:active {
 .headerBgTop {
     background: #ff4d29;
 }
-
+#Integrated{
+    border-bottom: 2px solid #ff4d29;
+}
 .dotList {
     padding-left: 1%;
     height: 50px;
