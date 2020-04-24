@@ -229,6 +229,13 @@ a:active {
 .navbar .nav>li>a {
     text-shadow: 0 1px 0 #333030;
 }
+/* .navbar .nav>li >a:after {
+    content: '',
+    display: block,
+    width: 30px,
+    border-bottom: 2xp solid #333;
+    margin:0 auto;
+} */
 
 .navbar {
     margin-bottom: 0;
@@ -320,6 +327,7 @@ a:active {
     margin: 35px 5%;
     color: #333;
     line-height: 35px;
+    font-family: 'Al-Regular';
 }
 
 .headline {
@@ -363,19 +371,25 @@ a:active {
 }
 
 .ourCapa {
-    padding: 1.8em 0;
-    font-size: 4em;
-    line-height: 1.8em;
+    padding: 1.5em 0;
+    font-size: 3.5em;
+    line-height: 1em;
     font-weight: bold;
+    font-family: 'Al-Bold';
+    /* font-family: 'Al-Light'; */
+    /* font-family: 'Al-Medium'; */
+    /* font-family: 'Al-Regular'; */
+    /* font-family: 'Al-HelveticaNeue'; */
 }
 
 .ourThink {
     margin: 5% 0;
+    font-family: 'Al-Regular';
 }
 
 .ourThink h2 {
     text-align: right;
-    padding-right: 25%;
+    padding-right: 12%;
 }
 
 
