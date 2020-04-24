@@ -477,8 +477,15 @@ a:active {
 #userInfoBox{
     display: none;
 }
-#userInfoBox input{
+#userInfoBox .inputNote{
     background: #ededed;
+}
+#userInfoBox input.inputNode{
+    background: #ededed;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #333;
 }
 .noticeText {
     padding-top: 15%;
@@ -515,15 +522,15 @@ a:active {
 }
 
 .inWXContainer {
-    margin-left: 33%;
-    margin-top: 10%;
+    margin-left: 40%;
+    margin-top: 15%;
 }
 
 .leftIn {
     display: inline-block;
     height: 80px;
     width: 86px;
-    margin-right: 5%;
+    margin-right: 8%;
     background: url(../images/about/4.png) left no-repeat;
 }
 .leftIn a {
