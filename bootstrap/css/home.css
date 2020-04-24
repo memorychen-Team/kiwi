@@ -93,6 +93,7 @@ body {
     text-align: center;
     font-family: '微软雅黑';
     background-repeat: repeat-x;
+    background: #ededed;
 }
 
 table {
@@ -193,7 +194,7 @@ a:active {
 /*首页样式*/
 
 .headerBgTop {
-    background: #e8442f;
+    background: #ff4d29;
 }
 
 .dotList {
@@ -232,7 +233,7 @@ a:active {
 }
 
 .navbar-inner {
-    background: #ff4c28;
+    background: #ff4d29;
     border: none;
     padding: 5px 0;
     font-family: "Al-Bold"
@@ -284,17 +285,17 @@ a:active {
 }
 
 .kiwiLabatory {
-    font-size: 2em;
+    font-size: 1.8em;
+    color: #33170c;
     font-weight: bold;
 }
 
 .kiwiOrder {
-    line-height: 2em;
-    position: absolute;
-    top:60%;
-    right: 10%;
-    width: 25%;
-    font-family: 'AL-Regular';
+    color: #791a00;
+    /* font-family: 'Al-Light'; */
+    /* font-family: 'Al-Medium'; */
+    font-family: 'Al-Regular';
+    /* font-family: 'Al-HelveticaNeue'; */
 }
 
 .moveImgContainer img {
@@ -381,6 +382,7 @@ a:active {
 .swiper-container {
     width: 100%;
     height: 1154px;
+    margin: 0 5%!important;
 }
 
 .swiper-slide {
@@ -436,24 +438,31 @@ a:active {
 
 .bannerBottomImgContainer {
     position: relative;
-    height: 730px;
+    height: 690px;
     margin-top: 2em;
-    background: url(../images/home/bottonBanner.jpg) top no-repeat;
+    padding-top: 50px;
+    background: url(../images/home/bottonBanner.jpg) center no-repeat;
     position: relative;
-    background-color: #e8442f;
+    background-color: #ff4d29;
 }
 
 .kiwiLaboratory {
-    height: 100px;
-    background-color: #e8442f;
+    height: 150px;
+    padding: 2% 8%;
+    background-color: #ff4d29;
 }
 
 .dividedLine {
     padding: 0 10%;
     margin: 0 5%;
-    border-bottom: 2px solid #333;
+    /* height: 50px; */
+    border-top: 2px solid #333;
+    background-color: #ff4d29;
 }
-
+.divideBox{
+    height: 70px;
+    background-color: #ff4d29;
+}
 .bottomContainer {
     width: 100%;
     height: 748px;
@@ -468,7 +477,9 @@ a:active {
 #userInfoBox{
     display: none;
 }
-
+#userInfoBox input{
+    background: #ededed;
+}
 .noticeText {
     padding-top: 15%;
     font-size: 12px;
