@@ -434,27 +434,10 @@ a:active {
 }
 
 /*底部样式*/
-
-.kiwiBottomTitle {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.subscrieTitle {
+/* .subscrieTitle {
     font-size: 2em;
     margin-bottom: 40px;
-}
-
-.futureTitle {
-    font-size: 1.5em;
-}
-
-.futureInfo {
-    line-height: 40px;
-    font-size: 1.5em;
-    padding-top: 2%;
-}
-
+} */
 .bannerBottomImgContainer {
     position: relative;
     height: 690px;
@@ -493,18 +476,16 @@ a:active {
     height: 300px;
     margin: 0px auto;
 }
-/* #userInfoBox .inputNote{
-    background: #ededed;
-}
-#userInfoBox input.inputNode{
-    background: #ededed;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    border-bottom: 1px solid #333;
-} */
 
 /*公共底部样式*/
+.kiwiBottomTitle {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subscrieTitle {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
 .noticeText {
     padding-top: 15%;
     font-size: 12px;
@@ -562,7 +543,14 @@ a:active {
     margin-left: 40%;
     margin-top: 15%;
 }
-
+.futureTitle {
+    font-size: 1.5em;
+}
+.futureInfo {
+    line-height: 40px;
+    font-size: 1.5em;
+    padding-top: 2%;
+}
 .leftIn {
     display: inline-block;
     height: 80px;
