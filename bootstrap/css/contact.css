@@ -198,6 +198,9 @@ body{
     width: 86px;
     background: url(../images/about/5.png) left no-repeat;
 }
+#userInfoBox{
+    display: none;
+}
 #userInfoBox .inputNote{
     background: #ededed;
 }
@@ -209,7 +212,7 @@ body{
     border-bottom: 1px solid #333;
 }
 .noticeText {
-    padding-top: 15%;
+    padding-top: 5%;
     font-size: 12px;
     color: #333;
 }
@@ -240,4 +243,12 @@ body{
 .rightWX {
     display: inline-block;
     height: 80px;
+}
+.dingyue {
+    font-size: 24px;
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 13px;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
