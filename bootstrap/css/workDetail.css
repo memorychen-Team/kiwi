@@ -391,3 +391,26 @@
     width: 86px;
     background: url(../images/about/5.png) left no-repeat;
 }
+.kiwiBottomTitle {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subscrieTitle {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+.subscrieInco {
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+    background-image: url(../images/home/subscire.png);
+}
+.dingyue {
+    font-size: 24px;
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 13px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}

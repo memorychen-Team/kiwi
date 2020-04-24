@@ -493,6 +493,37 @@ a:active {
     height: 300px;
     margin: 0px auto;
 }
+/* #userInfoBox .inputNote{
+    background: #ededed;
+}
+#userInfoBox input.inputNode{
+    background: #ededed;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #333;
+} */
+
+/*公共底部样式*/
+.noticeText {
+    padding-top: 15%;
+    font-size: 12px;
+    color: #333;
+}
+.dingyue {
+    font-size: 24px;
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 1px 13px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.subscrieInco {
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+    background-image: url(../images/home/subscire.png);
+}
 #userInfoBox{
     display: none;
 }
@@ -506,19 +537,6 @@ a:active {
     border-radius: 0;
     border-bottom: 1px solid #333;
 }
-.noticeText {
-    padding-top: 15%;
-    font-size: 12px;
-    color: #333;
-}
-
-.subscrieInco {
-    display: inline-block;
-    width: 23px;
-    height: 24px;
-    background-image: url(../images/home/subscire.png);
-}
-
 .listBox ul {
     overflow: hidden;
     margin-left: 30%;
