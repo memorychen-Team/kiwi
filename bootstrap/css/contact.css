@@ -41,9 +41,6 @@ body{
     font-weight: bold;
     line-height: 42px;
 }
-.active {
-    border-bottom: 1px solid orangered;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -70,10 +67,40 @@ body{
 .navbar .nav>.active>a:hover,
 .navbar .nav>.active>a:focus {
     background-color: transparent;
-    border-bottom: 1px solid #a47e3c;
     box-shadow: none;
     font-size: 1.2em;
     color: #333;
+}
+#navList li{
+    position: relative;
+}
+#navList li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 40px;
+    border-bottom: 2px solid #ff4d29;
+    transition: 0.2s all linear;
+}
+#navList li a:hover::before {
+    width: 40%;
+    margin-left: 38%;
+    left: 0;
+}
+#navList li a.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    width: 40%;
+    margin-left: 38%;
+    left: 0;
+    height: 40px;
+    border-bottom: 2px solid #ff4d29;
+    transition: 0.2s all linear;
 }
 
 .navbar .nav.languageList li a {
