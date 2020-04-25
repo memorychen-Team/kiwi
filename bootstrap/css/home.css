@@ -164,7 +164,6 @@ input {
 }
 
 /*css定义超链接四个状态也有顺序的。*/
-
 a:link,
 a:visited {
     text-decoration: none;
@@ -175,6 +174,70 @@ a:hover,
 a:active {
     text-decoration: underline;
     border: none;
+}
+/* 禁止出现滚动条 */
+body::-webkit-scrollbar { 
+    width: 0 !important 
+}
+
+/*************顶部nav****************/
+.headerBgTop {
+    background: #ff4d29;
+}
+.dotList {
+    padding-left: 1%;
+    height: 50px;
+    line-height: 35px;
+}
+.dotList span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: #000000;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+.headlineTitle {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 45px;
+    background: #ff4d29!important;
+}
+.navbar .nav.languageList li a {
+    padding: 10px 4px 10px;
+    font-size: 1.1em;
+}
+/* .navbar .nav>li >a:after {
+    content: '',
+    display: block,
+    width: 30px,
+    border-bottom: 2xp solid #333;
+    margin:0 auto;
+} */
+#languageList {
+    padding: 5px;
+}
+/*************顶部nav底部****************/
+
+
+/*********************video样式***************************/
+video::-webkit-media-controls {
+    display:none !important;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+.videoContainer {
+    width: 100%;
+    height: 952px;
+    position: relative;
+}
+.kiwiVideoContainer{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    top:35%;
 }
 .kiwiVideoBox{
     font-size: 5em;
@@ -190,68 +253,55 @@ a:active {
     color: #fff;
     font-family: "Al-Bold"
 }
-
-/*首页样式*/
-
-.headerBgTop {
-    background: #ff4d29;
-}
-#Integrated{
-    border-bottom: 2px solid #ff4d29;
-}
-.dotList {
-    padding-left: 1%;
-    height: 50px;
-    line-height: 35px;
-}
-
-.dotList span {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    background-color: #000000;
-    vertical-align: middle;
-    border-radius: 100%;
-}
-
-.headlineTitle {
-    font-size: 3em;
-    text-align: center;
-    font-weight: bold;
-    line-height: 45px;
-}
-
 .headerBg {
     background: #1a1a1a;
 }
+/*********************video样式结束***************************/
 
-.navbar .nav>li>a {
-    text-shadow: 0 1px 0 #333030;
+/********************Integrated样式*************************/
+#Integrated{
+    border-bottom: 2px solid #ff4d29;
 }
-/* .navbar .nav>li >a:after {
-    content: '',
-    display: block,
-    width: 30px,
-    border-bottom: 2xp solid #333;
-    margin:0 auto;
-} */
+.moveImgContainer {
+    height: 500px;
+    position: relative;
+}
+.moveImgContainer img {
+    width: 100%;
+}
+.bannerHeadline {
+    text-align: center;
+    font-size: 3.5em;
+    color: #333;
+    padding-top: 140px;
+    width: 61%;
+    padding-left: 5%;
+    text-align: left;
+    line-height: 50px;
+}
+.bannerContent {
+    width: 90%;
+    margin: 35px 5%;
+    color: #333;
+    line-height: 35px;
+    font-family: 'Al-Regular';
+}
+/********************Integrated样式结束************************/
 
+/********************二级标题和banner样式************************/
 .navbar {
     margin-bottom: 0;
 }
-
+.navbar .nav>li>a {
+    text-shadow: 0 1px 0 #333030;
+}
 .navbar-inner {
-    background: #ff4d29;
     border: none;
     padding: 5px 0;
-    font-family: "Al-Bold"
+    font-family: "Al-Bold";
+    background: #ededed;
+    box-shadow: none;
 }
-
-#languageList {
-    padding: 5px;
-}
-
 .navbar-inner a.brand {
     font-size: 1.6em;
     color: #fff!important;
@@ -271,87 +321,37 @@ a:active {
     box-shadow: none;
     border-bottom: 1px solid #fc7b19;
 }
-
-.navbar .nav.languageList li a {
-    padding: 10px 4px 10px;
-    font-size: 1.1em;
-}
-
-.videoContainer {
-    height: 550px;
-}
-
-.moveImgContainer {
-    height: 500px;
-    position: relative;
-}
-
 .bannerImgContainer {
-    height: 799px;
     background: url(../images/home/1.gif) center no-repeat;
     height: 580px;
     position: relative;
+    background-size: cover;
+    position: relative;
+    width: 70%;
+    margin: auto;
 }
-
-.kiwiLabatory {
-    font-size: 1.8em;
-    color: #33170c;
-    font-weight: bold;
-}
-
-.kiwiOrder {
-    color: #791a00;
-    /* font-family: 'Al-Light'; */
-    /* font-family: 'Al-Medium'; */
+.ourThink {
+    margin: 5% 0;
     font-family: 'Al-Regular';
-    /* font-family: 'Al-HelveticaNeue'; */
 }
+.ourThink h2 {
+    text-align: right;
+    padding-right: 12%;
+}
+/********************二级标题和banner样式结束************************/
 
-.moveImgContainer img {
+/********************Our Capabilities样式************************/
+.dividedLine {
+    padding: 0 10%;
+    margin: 0 5%;
+    height: 50px;
+    border-top: 2px solid #333;
+}
+.swiper-container {
     width: 100%;
+    height: 700px;
+    margin: 0 5%!important;
 }
-
-.bannerHeadline {
-    text-align: center;
-    font-size: 3.5em;
-    color: #333;
-    padding-top: 140px;
-    width: 61%;
-    padding-left: 5%;
-    text-align: left;
-    line-height: 50px;
-}
-
-.bannerContent {
-    width: 90%;
-    margin: 35px 5%;
-    color: #333;
-    line-height: 35px;
-    font-family: 'Al-Regular';
-}
-
-.headline {
-    padding: 75px 0;
-}
-
-.detailList {
-    margin-top: 30px;
-}
-
-
-/* .contentBoxContainer {
-    height: 1300px;
-} */
-
-.detailList ul {
-    height: 6957px;
-}
-
-.detailList ul li {
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
 .dotIcon {
     display: inline-block;
     width: 30px;
@@ -360,16 +360,6 @@ a:active {
     background: orangered;
     vertical-align: middle;
 }
-
-.dotBlackIcon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background: #333;
-    vertical-align: middle;
-}
-
 .ourCapa {
     padding: 1.5em 0;
     font-size: 3.5em;
@@ -381,32 +371,12 @@ a:active {
     /* font-family: 'Al-Regular'; */
     /* font-family: 'Al-HelveticaNeue'; */
 }
-
-.ourThink {
-    margin: 5% 0;
-    font-family: 'Al-Regular';
-}
-
-.ourThink h2 {
-    text-align: right;
-    padding-right: 12%;
-}
-
-
 /*轮播样式*/
-
-.swiper-container {
-    width: 100%;
-    height: 700px;
-    margin: 0 5%!important;
-}
-
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     width: 80%;
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -432,8 +402,9 @@ a:active {
     width: 700px;
     height: 700px;
 }
+/********************Our Capabilities结束样式************************/
 
-/*底部样式*/
+/********************kiwi实验室样式************************/
 .bannerBottomImgContainer {
     position: relative;
     height: 690px;
@@ -443,37 +414,40 @@ a:active {
     position: relative;
     background-color: #ff4d29;
 }
-
 .kiwiLaboratory {
     height: 150px;
     padding: 2% 8%;
     background-color: #ff4d29;
 }
-
-.dividedLine {
-    padding: 0 10%;
-    margin: 0 5%;
-    /* height: 50px; */
-    border-top: 2px solid #333;
-    background-color: #ff4d29;
+.kiwiLabatory {
+    font-size: 1.8em;
+    color: #33170c;
+    font-weight: bold;
+}
+.dotBlackIcon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #333;
+    vertical-align: middle;
+}
+.kiwiOrder {
+    color: #791a00;
+    /* font-family: 'Al-Light'; */
+    /* font-family: 'Al-Medium'; */
+    font-family: 'Al-Regular';
+    /* font-family: 'Al-HelveticaNeue'; */
 }
 .divideBox{
     height: 70px;
     background-color: #ff4d29;
 }
-.bottomContainer {
-    width: 100%;
-    height: 748px;
-    background-image: url(../images/home/12.png);
-}
+/********************kiwi实验室样式结束************************/
 
-.bottomContent {
-    width: 50%;
-    height: 300px;
-    margin: 0px auto;
-}
 
-/*公共底部样式*/
+
+/********************底部样式*********************************/
 .kiwiBottomTitle {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -481,6 +455,13 @@ a:active {
 .subscrieTitle {
     font-size: 2em;
     margin-bottom: 40px;
+}
+.subscrieInco {
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+    margin-left: 18%;
+    background-image: url(../images/home/subscire.png);
 }
 .noticeText {
     padding-top: 15%;
@@ -495,13 +476,6 @@ a:active {
     border-radius: 10px;
     margin-bottom: 30px;
 }
-.subscrieInco {
-    display: inline-block;
-    width: 23px;
-    height: 24px;
-    margin-left: 18%;
-    background-image: url(../images/home/subscire.png);
-}
 #userInfoBox{
     display: none;
 }
@@ -515,27 +489,6 @@ a:active {
     border-radius: 0;
     border-bottom: 1px solid #333;
 }
-.listBox ul {
-    overflow: hidden;
-    margin-left: 30%;
-}
-
-.listBox ul li {
-    float: left;
-    width: 15%;
-    height: 48px;
-    line-height: 40px;
-    text-align: center;
-    margin-left: 3%;
-}
-
-.listBox ul li a {
-    float: left;
-    width: 100%;
-    height: 48px;
-    line-height: 40px;
-}
-
 .inWXContainer {
     margin-left: 47%;
     margin-top: 15%;
@@ -566,3 +519,14 @@ a:active {
     width: 86px;
     background: url(../images/about/5.png) left no-repeat;
 }
+#exampleInputNote{
+    width: 44%;
+    margin-top: 2%;
+}
+.submitBtn{
+    background: #e8442f;
+    color: #fff;
+    margin: 10px;
+    width: 41%;
+}
+/********************底部样式结束*********************************/

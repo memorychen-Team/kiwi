@@ -11,23 +11,13 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <style>
-        /* 禁止出现滚动条 */
-        body::-webkit-scrollbar { 
-            width: 0 !important 
-        }
-        /* 处理视频 */
-        video::-webkit-media-controls {
-            display:none !important;
-            -ms-overflow-style: none;
-            overflow: -moz-scrollbars-none; 
-        }
-        .bannerImgContainer {
+        /* .bannerImgContainer {
             height: 580px;
             background-size: cover;
             position: relative;
             width: 60%;
             margin: auto;
-        }
+        } */
     </style>
 </head>
 
@@ -36,7 +26,7 @@
         <div class="row-fluid headerBgTop">
             <div class="span12">
                 <div class="navbar">
-                    <div class="navbar-inner">
+                    <div class="navbar-inner" style="background: #ff4d29;">
                         <div class="span11">
                             <ul class="nav dotList">
                                 <span></span>
@@ -58,8 +48,8 @@
             </div>
         </div>
         <div class="row-fluid headerBg">
-            <div class="videoContainer" id="videoContainer" style="width: 100%;height: 952px;position: relative;">
-                <div style="position: absolute;width: 100%;z-index: 100;top:35%;">
+            <div class="videoContainer" id="videoContainer">
+                <div class="kiwiVideoContainer">
                     <div class="kiwiVideoBox">KIWI</div>
                     <br>
                     <H3 class="videoCommunication">COMMUNICATIONS</H3>
@@ -85,7 +75,7 @@
         <div class="row-fluid" style="margin-bottom: 5%;">
             <div class="span4 offset8">
                 <div class="navbar">
-                    <div class="navbar-inner" style="background: #ededed;box-shadow: none;">
+                    <div class="navbar-inner">
                         <ul class="nav" id="navList">
                             <li class="active"><a href="./home.html">HOME</a></li>
                             <li><a href="./work.html">WORK</a></li>
@@ -171,9 +161,9 @@
                                 <span>*</span>&nbsp;邮箱：<input class="inputNode" type="email" class="form-control" id="exampleInputEmail1">
                             </div>
                             <div class="form-group">
-                                <span>*</span>&nbsp;留言：<textarea type="textarea" rows="3" cols="10" class="form-control inputNote" id="exampleInputNote"></textarea>
+                                <textarea type="textarea" rows="3" placeholder="留言" cols="10" class="form-control inputNote" id="exampleInputNote"></textarea>
                             </div>
-                            <button type="submit" class="btn" style="background: #e8442f;color: #fff;margin: 10px;">提交</button>
+                            <button type="submit" class="btn submitBtn">提交</button>
                         </form>
                     </div>
                     <div class="span6">
