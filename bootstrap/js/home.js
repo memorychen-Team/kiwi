@@ -64,7 +64,7 @@
             // 4-23
             $("#bannerIntro").html(EN.compant_intro)
             $("#kiwilab_content").html(EN.kiwilab_content)
-            $("#future_one").html(EN.future_one)
+            $("#futureNode").html(EN.future_one)
             $("#future_two").html(EN.future_two)
             $("#future_three").html(EN.future_three)
         } else if (language == 'cn') {
@@ -95,7 +95,7 @@
             // 4-23
             $("#bannerIntro").html(CN.compant_intro)
             $("#kiwilab_content").html(CN.kiwilab_content)
-            $("#future_one").html(CN.future_one)
+            $("#futureNode").html(CN.future_one)
             $("#future_two").html(CN.future_two)
             $("#future_three").html(CN.future_three)
         }

@@ -529,4 +529,7 @@ video::-webkit-media-controls {
     margin: 10px;
     width: 41%;
 }
+#futureNode{
+    border-bottom: 1px solid #ff4d29; 
+}
 /********************底部样式结束*********************************/
