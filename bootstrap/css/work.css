@@ -36,8 +36,8 @@ body::-webkit-scrollbar {
 /******************顶部导航开始*******************/
 .headerBg {
     background: #0e0e0e;
-    position: relative;
-    z-index: 100;
+    position: fixed;
+    z-index: 1000;
 }
 .navbar {
     margin-bottom: 0;
@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 8px 0;
+    padding: 15px 0;
 }
 .headlineTitle {
     font-size: 1.5em!important;
@@ -102,6 +102,7 @@ video::-webkit-media-controls {
 }
 #navList li{
     position: relative;
+    margin-right: 20px;
 }
 #navList li a::before {
     content: "";
@@ -115,7 +116,7 @@ video::-webkit-media-controls {
 }
 #navList li a:hover::before {
     width: 40%;
-    margin-left: 38%;
+    margin-left: 35%;
     left: 0;
 }
 #navList li a.active::before {
@@ -125,7 +126,7 @@ video::-webkit-media-controls {
     left: 100%;
     width: 0;
     width: 40%;
-    margin-left: 38%;
+    margin-left: 35%;
     left: 0;
     height: 40px;
     border-bottom: 2px solid #ff4d29;
@@ -174,7 +175,6 @@ video::-webkit-media-controls {
     padding-left:2%;
 }
 .dotList {
-    padding-left: 5%;
     height: 40px;
     line-height: 40px;
 }
@@ -204,7 +204,7 @@ a.headlineSubTitle:hover {
 .workContainerList {
     width: 100%;
     max-height: 3000px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: relative;
 }
 .workContainerList::-webkit-scrollbar {
@@ -321,6 +321,7 @@ div.tab-content {
     background: orchid;
     position: fixed;
     top: 85%;
+    left:1%;
     display: none;
     background: url(../images/work/up.png) center no-repeat;
 }

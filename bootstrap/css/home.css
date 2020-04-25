@@ -183,13 +183,13 @@ body::-webkit-scrollbar {
 /*************顶部nav****************/
 .headerBgTop {
     background: #ff4d29;
-    position: relative;
-    z-index: 100;
+    position: fixed;
+    z-index: 1000;
 }
 .dotList {
-    padding-left: 1%;
+    padding-left: 0.5%;
     height: 50px;
-    line-height: 35px;
+    line-height: 22px;
 }
 .dotList span {
     display: inline-block;
@@ -211,10 +211,13 @@ body::-webkit-scrollbar {
     padding: 10px 4px 10px;
     font-size: 1.1em;
 }
-#languageList {
-    padding: 5px;
+.languageList{
+    position: relative;
+    top:20px;
+    left: 35px!important;
 }
 #navList li{
+    margin-right: 30px;
     position: relative;
 }
 #navList li a::before {
@@ -229,7 +232,7 @@ body::-webkit-scrollbar {
 }
 #navList li a:hover::before {
     width: 40%;
-    margin-left: 38%;
+    margin-left: 35%;
     left: 0;
 }
 #navList li a.active::before {
@@ -239,7 +242,7 @@ body::-webkit-scrollbar {
     left: 100%;
     width: 0;
     width: 40%;
-    margin-left: 38%;
+    margin-left: 35%;
     left: 0;
     height: 40px;
     border-bottom: 2px solid #ff4d29;
@@ -264,6 +267,7 @@ video::-webkit-media-controls {
     width: 100%;
     z-index: 100;
     top:35%;
+    font-family: 'Al-Medium';
 }
 .kiwiVideoBox{
     font-size: 5em;
@@ -362,14 +366,14 @@ video::-webkit-media-controls {
 }
 .ourThink h2 {
     text-align: right;
-    padding-right: 12%;
+    padding-right: 18%;
 }
 /********************二级标题和banner样式结束************************/
 
 /********************Our Capabilities样式************************/
 .dividedLine {
     padding: 0 10%;
-    margin: 0 5%;
+    margin: 0 10%;
     height: 50px;
     border-top: 2px solid #333;
 }

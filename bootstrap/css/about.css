@@ -34,6 +34,8 @@
 .headerBg {
     height: 63px;
     background: #f5f3f0;
+    position: fixed;
+    z-index: 1000;
     border-bottom: 2px solid #ffc9b5;
 }
 
@@ -154,7 +156,7 @@
 }
 
 .customerInfo {
-    margin: 5% 12% 4% 2%;
+    margin: 5% 12% 4% 3%;
 }
 .abooutImgContainer {
     height: 640px;
@@ -172,8 +174,9 @@
     margin-top: 400px;
 }
 .honorText{
-    width:92%;
+    width:100%;
     margin: 0 auto;
+    padding-left: 45px;
     border-bottom: 1px solid #000;
     padding-bottom: 100px;
 }
@@ -227,7 +230,7 @@
     border-bottom: 1px solid #333;
 }
 .inWXContainer {
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: 15%;
 }
 .futureTitle {

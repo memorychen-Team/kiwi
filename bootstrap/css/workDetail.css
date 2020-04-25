@@ -160,7 +160,7 @@
 }
 
 .dividerLine {
-    border-bottom: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
     margin: 0 6%;
 }
 /**********************二级标题结束*******************************/
@@ -236,7 +236,7 @@
 .workContainerList {
     width: 100%;
     max-height: 1500px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: relative;
 }
 .workContainerList::-webkit-scrollbar {
@@ -317,6 +317,7 @@
     position: fixed;
     z-index: 500;
     bottom: 5%;
+    left: 1%;
     background: url(../images/work/up.png) center no-repeat;
 }
 
@@ -376,7 +377,7 @@
     border-bottom: 1px solid #333;
 }
 .inWXContainer {
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: 15%;
 }
 .futureTitle {

@@ -33,6 +33,8 @@ body{
 .headerBg {
     height: 63px;
     background: #f5f3f0;
+    position: fixed;
+    z-index: 1000;
     border-bottom: 2px solid #ffc9b5;
 }
 .headlineTitle {
@@ -89,7 +91,7 @@ body{
 }
 #navList li a:hover::before {
     width: 40%;
-    margin-left: 38%;
+    margin-left: 35%;
     left: 0;
 }
 #navList li a.active::before {
@@ -99,7 +101,7 @@ body{
     left: 100%;
     width: 0;
     width: 40%;
-    margin-left: 38%;
+    margin-left: 35%;
     left: 0;
     height: 40px;
     border-bottom: 2px solid #ff4d29;
