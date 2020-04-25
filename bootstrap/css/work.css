@@ -36,6 +36,8 @@ body::-webkit-scrollbar {
 /******************顶部导航开始*******************/
 .headerBg {
     background: #0e0e0e;
+    position: relative;
+    z-index: 100;
 }
 .navbar {
     margin-bottom: 0;
@@ -108,7 +110,6 @@ video::-webkit-media-controls {
     color: #292929;
 }
 .navbar{
-    margin-top: 20px;
     margin-left: 75px;
 }
 .dotIcon {

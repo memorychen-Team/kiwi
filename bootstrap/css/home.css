@@ -183,6 +183,8 @@ body::-webkit-scrollbar {
 /*************顶部nav****************/
 .headerBgTop {
     background: #ff4d29;
+    position: relative;
+    z-index: 100;
 }
 .dotList {
     padding-left: 1%;
