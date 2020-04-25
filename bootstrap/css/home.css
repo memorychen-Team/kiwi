@@ -427,10 +427,6 @@ video::-webkit-media-controls {
 .swiper-slide:nth-child(3n) {
     width: 40%;
 }
-.swiper-slide img{
-    width: 700px;
-    height: 700px;
-}
 /********************Our Capabilities结束样式************************/
 
 /********************kiwi实验室样式************************/

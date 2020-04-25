@@ -38,6 +38,10 @@
     background-color: #000;
     border-bottom: 2px solid #e6e3dc;
 }
+.detailTitle{
+    float: left;
+    font-size: 2em;
+}
 .nav-bar {
     float: right;
     height: 100%;
@@ -47,6 +51,7 @@
     vertical-align: middle;
     color: #fff;
     padding: 5px;
+    margin-right: 25px;
     text-decoration: none;
 }
 
@@ -59,6 +64,39 @@
     border-radius: 50%;
     margin: 0 1px;
 }
+.nav-bar a{
+    position: relative;
+    margin-right: 20px;
+}
+.nav-bar a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 40px;
+    border-bottom: 2px solid #ff4d29;
+    transition: 0.2s all linear;
+}
+.nav-bar a:hover::before {
+    width: 40%;
+    margin-left: 35%;
+    left: 0;
+}
+.nav-bar a.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    width: 40%;
+    margin-left: 35%;
+    left: 0;
+    height: 40px;
+    border-bottom: 2px solid #ff4d29;
+    transition: 0.2s all linear;
+}
+
 /******************header顶部导航样式结束*************************/
 
 /******************banner样式开始*************************/
@@ -151,16 +189,15 @@
     text-decoration: none;
 }
 
-.active {
+/* .active {
     border-bottom: 1px solid orangered;
-}
+} */
 
 .navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
 
 .dividerLine {
-    /* border-bottom: 1px solid #333; */
     margin: 0 6%;
 }
 /**********************二级标题结束*******************************/
