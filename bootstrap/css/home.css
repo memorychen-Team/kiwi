@@ -377,7 +377,7 @@ video::-webkit-media-controls {
     border-top: 2px solid #333;
 }
 .swiper-container {
-    width: 100%;
+    width: 88%;
     height: 700px;
     margin: 0 5%!important;
 }
