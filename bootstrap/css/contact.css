@@ -61,6 +61,9 @@ body{
     box-shadow: none;
     border: none;
     padding: 10px 0;
+    text-align: left;
+    float: right;
+    margin-right: 65px;
 }
 
 .navbar .nav>.active>a,
@@ -145,10 +148,31 @@ body{
     background: orangered;
     vertical-align: middle;
 }
+.joinusContainer{
+    margin-top: 51%;
+    float: right;
+    text-align: right;
+    margin-right: 135px;
+}
+#joinus{
+    margin-bottom: 75px;
+    font-size: 60px;
+}
 .customeImgContainer {
+    margin-top: 200px;
     height: 200px;
 }
-
+.morePositionContainer{
+    margin-left: 270px;
+}
+.positionBox{
+    text-align: right;
+    margin-top: 10%;
+}
+.positionText{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ff4500;
+}
 .dotSmallIcon {
     display: inline-block;
     width: 30px;
@@ -176,6 +200,27 @@ body{
     height: 700px;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
+}
+.contactusBox{
+    height: 75%!important;
+    border-right: 1px solid #333!important;
+    margin: 70px!important;
+}
+.contactusText{
+    font-size:68px;
+    margin-left: -70px;
+}
+.dotContainer{
+    text-align: right;
+    margin-bottom: 135px;
+    margin-top: 72px;
+}
+.workAddress{
+    text-align: right;
+    padding: 20px 0;
+}
+.workAddress h5{
+    margin-bottom: 20px
 }
 .subscrieImgContainer {
     height: 109px;
