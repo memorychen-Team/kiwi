@@ -1,5 +1,5 @@
 ﻿body{
-    background: #ededed;
+    background: #efefef;
 }
 
 /*
@@ -45,10 +45,6 @@
     font-weight: bold;
     line-height: 42px;
 }
-
-/* .active {
-    border-bottom: 1px solid orangered;
-} */
 
 .navbar {
     margin-bottom: 0;
@@ -156,7 +152,7 @@
 }
 
 .customerInfo {
-    margin: 5% 12% 4% 3%;
+    margin: 5% 12% 4% 4%;
 }
 .abooutImgContainer {
     height: 640px;
@@ -176,8 +172,8 @@
 .honorText{
     width:100%;
     margin: 0 auto;
-    padding-left: 45px;
-    border-bottom: 1px solid #000;
+    padding-left: 70px;
+    /* border-bottom: 1px solid #000; */
     padding-bottom: 100px;
 }
 .dividedLine {
@@ -215,6 +211,8 @@
     padding: 10px 13px;
     border-radius: 10px;
     margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Al-Bold';
 }
 #userInfoBox{
     display: none;
@@ -230,7 +228,7 @@
     border-bottom: 1px solid #333;
 }
 .inWXContainer {
-    margin-left: 50%;
+    margin-left: 40%;
     margin-top: 15%;
 }
 .futureTitle {
@@ -240,13 +238,12 @@
 .futureInfo {
     line-height: 40px;
     font-size: 1.5em;
-    padding-top: 2%;
 }
 .leftIn {
     display: inline-block;
     height: 80px;
     width: 86px;
-    margin-right: 8%;
+    margin-right: 25%;
     background: url(../images/about/4.png) left no-repeat;
 }
 .leftIn a {

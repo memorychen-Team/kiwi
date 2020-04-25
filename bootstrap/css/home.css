@@ -349,7 +349,6 @@ video::-webkit-media-controls {
     font-size: 1.5em;
     background-color: #ededed;
     box-shadow: none;
-    /* border-bottom: 1px solid #fc7b19; */
 }
 .bannerImgContainer {
     background: url(../images/home/1.gif) center no-repeat;
@@ -505,6 +504,8 @@ video::-webkit-media-controls {
     padding: 1px 13px;
     border-radius: 10px;
     margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Al-Bold';
 }
 #userInfoBox{
     display: none;
@@ -520,7 +521,7 @@ video::-webkit-media-controls {
     border-bottom: 1px solid #333;
 }
 .inWXContainer {
-    margin-left: 47%;
+    margin-left: 35%;
     margin-top: 15%;
 }
 .futureTitle {
@@ -529,13 +530,12 @@ video::-webkit-media-controls {
 .futureInfo {
     line-height: 40px;
     font-size: 1.5em;
-    padding-top: 2%;
 }
 .leftIn {
     display: inline-block;
     height: 80px;
     width: 86px;
-    margin-right: 8%;
+    margin-right: 24%;
     background: url(../images/about/4.png) left no-repeat;
 }
 .leftIn a {
