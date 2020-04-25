@@ -28,29 +28,18 @@ body{
     font-family: "Al-HelveticaNeue";
     src:url('../font/HelveticaNeue.ttc');
 }
+
+/*************顶部导航栏开始**************/
 .headerBg {
     height: 63px;
     background: #f5f3f0;
     border-bottom: 2px solid #ffc9b5;
 }
-
 .headlineTitle {
     font-size: 3em;
     text-align: center;
     font-weight: bold;
     line-height: 42px;
-}
-
-.subTitle {
-    margin: 0 2% 3% 1%;
-    line-height: 1.2em;
-    font-size: 7em;
-}
-.subscrieInco {
-    display: inline-block;
-    width: 23px;
-    height: 24px;
-    background-image: url(../images/home/subscire.png);
 }
 .active {
     border-bottom: 1px solid orangered;
@@ -90,13 +79,18 @@ body{
 .navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
+/*************顶部导航栏结束**************/
 
+/*************加入我们开始**************/
 .aboutContainer {
-    /* height: 2375px; */
     padding-top: 8%;
     background-color: #f5f3f0;
 }
-
+.subTitle {
+    margin: 0 2% 3% 1%;
+    line-height: 1.2em;
+    font-size: 7em;
+}
 .contactImgContainer {
     height: 1073px;
     background: url(../images/contact/1.jpg) center no-repeat;
@@ -124,6 +118,9 @@ body{
     background: orangered;
     vertical-align: middle;
 }
+.customeImgContainer {
+    height: 200px;
+}
 
 .dotSmallIcon {
     display: inline-block;
@@ -133,7 +130,12 @@ body{
     background: orangered;
     vertical-align: middle;
 }
-
+.addressImg {
+    height: 66px;
+    margin-top: 8%;
+    background: url(../images/contact/2.png) left no-repeat;
+    background-size: 66%;
+}
 .dividedLine {
     border-bottom: 2px solid #333;
 }
@@ -143,60 +145,49 @@ body{
     line-height: 2em;
     font-size: 2em;
 }
-
-.subscrieInfo {
-    margin: 4% 2% 3% 0;
-    line-height: 2em;
-    font-size: 1.8em;
-}
-
-.customeImgContainer {
-    height: 200px;
-}
-
-.addressImg {
-    height: 66px;
-    margin-top: 8%;
-    background: url(../images/contact/2.png) left no-repeat;
-    background-size: 66%;
-}
-
 .contactUsContainer {
     height: 700px;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
 }
-
 .subscrieImgContainer {
     height: 109px;
     margin-left: 0;
     background: url(../images/about/3.png) left no-repeat;
     background-size: 25%;
 }
+/*************加入我们结束**************/
 
-.inWXContainer {
-    margin-left: 15%;
+/*************底部样式开始**************/
+.kiwiBottomTitle {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: normal;
 }
-
-.leftIn {
-    display: inline-block;
-    height: 80px;
-    width: 135px;
-    margin-right: 5%;
-    background: url(../images/about/4.png) left no-repeat;
+.subscrieTitle {
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-weight: normal;
 }
-
-.rightWX {
+.subscrieInco {
     display: inline-block;
-    height: 80px;
-    width: 86px;
-    background: url(../images/about/5.png) left no-repeat;
+    width: 23px;
+    height: 24px;
+    margin-left: 18%;
+    background-image: url(../images/home/subscire.png);
 }
-.rightWX {
-    display: inline-block;
-    height: 80px;
-    width: 86px;
-    background: url(../images/about/5.png) left no-repeat;
+.noticeText {
+    padding-top: 5%;
+    font-size: 12px;
+    color: #333;
+}
+.dingyue {
+    font-size: 24px;
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 10px 13px;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 #userInfoBox{
     display: none;
@@ -211,22 +202,18 @@ body{
     border-radius: 0;
     border-bottom: 1px solid #333;
 }
-.noticeText {
-    padding-top: 5%;
-    font-size: 12px;
-    color: #333;
+.inWXContainer {
+    margin-left: 47%;
+    margin-top: 15%;
 }
 .futureTitle {
     font-size: 1.5em;
+    font-weight: normal;
 }
 .futureInfo {
     line-height: 40px;
     font-size: 1.5em;
     padding-top: 2%;
-}
-.inWXContainer {
-    margin-top: 90px;
-    margin-left: 47%;
 }
 .leftIn {
     display: inline-block;
@@ -243,16 +230,17 @@ body{
 .rightWX {
     display: inline-block;
     height: 80px;
+    width: 86px;
+    background: url(../images/about/5.png) left no-repeat;
 }
-.dingyue {
-    font-size: 24px;
-    border: 1px solid #000;
-    width: fit-content;
-    padding: 10px 13px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+#exampleInputNote{
+    width: 44%;
+    margin-top: 2%;
 }
-#future_one{
-    padding-bottom: 1px;
-    border-bottom: 1px solid #ff4500;
+.submitBtn{
+    background: #e8442f;
+    color: #fff;
+    margin: 10px;
+    width: 41%;
 }
+/*************底部样式结束**************/
