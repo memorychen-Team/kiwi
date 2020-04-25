@@ -225,8 +225,8 @@ body{
     padding-top: 2%;
 }
 .inWXContainer {
-    margin-left: 40%;
-    margin-top: 15%;
+    margin-top: 90px;
+    margin-left: 47%;
 }
 .leftIn {
     display: inline-block;
@@ -251,4 +251,8 @@ body{
     padding: 10px 13px;
     border-radius: 10px;
     margin-bottom: 30px;
+}
+#future_one{
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ff4500;
 }

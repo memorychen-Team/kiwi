@@ -238,6 +238,7 @@
     display: inline-block;
     width: 23px;
     height: 24px;
+    margin-left: 18%;
     background-image: url(../images/home/subscire.png);
 }
 #userInfoBox{
@@ -273,16 +274,8 @@
     height: 48px;
     line-height: 40px;
 }
-/* .futureTitle {
-    font-size: 1.5em;
-}
-.futureInfo {
-    line-height: 40px;
-    font-size: 1.5em;
-    padding-top: 2%;
-} */
 .inWXContainer {
-    margin-left: 40%;
+    margin-left: 47%;
     margin-top: 15%;
 }
 

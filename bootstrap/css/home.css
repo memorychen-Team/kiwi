@@ -499,6 +499,7 @@ a:active {
     display: inline-block;
     width: 23px;
     height: 24px;
+    margin-left: 18%;
     background-image: url(../images/home/subscire.png);
 }
 #userInfoBox{
@@ -536,7 +537,7 @@ a:active {
 }
 
 .inWXContainer {
-    margin-left: 40%;
+    margin-left: 47%;
     margin-top: 15%;
 }
 .futureTitle {

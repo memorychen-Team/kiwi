@@ -2,7 +2,7 @@
     // 轮播
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
-        spaceBetween: 20,
+        spaceBetween: 80,
         speed: 2000,
         loop: true,
         auto: true,
