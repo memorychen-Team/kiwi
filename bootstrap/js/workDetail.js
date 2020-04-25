@@ -31,6 +31,17 @@ $(document).ready(function() {
             }
         }, 30)
     }
+    // up的显示隐藏
+    $(window).scroll(function(){
+        //为了保证兼容性，这里取两个值，哪个有值取哪一个
+        var clientHeight  = $(window).height()
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop >= clientHeight) {
+            $('#goBackUp').show()
+        } else {
+            $('#goBackUp').hide()
+        }
+    }); 
     // 订阅
     $("#subscribeBtn").click(function(e) {
         $("#userInfoBox").toggle();
