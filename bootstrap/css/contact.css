@@ -193,10 +193,10 @@ body{
     display: none;
 }
 #userInfoBox .inputNote{
-    background: #ededed;
+    background: transparent;
 }
 #userInfoBox input.inputNode{
-    background: #ededed;
+    background: transparent;
     border: none;
     box-shadow: none;
     border-radius: 0;
