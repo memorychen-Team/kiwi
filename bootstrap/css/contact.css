@@ -1,42 +1,52 @@
-body{
+body {
     background: #efefef;
 }
+
 /*
 *阿里字体包
 */
-@font-face{
+@font-face {
     font-family: "Al-Bold";
-    src:url('../font/Alibaba-PuHuiTi-Bold.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Bold.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Heavy";
-    src:url('../font/Alibaba-PuHuiTi-Heavy.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Heavy.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Ligth";
-    src:url('../font/Alibaba-PuHuiTi-Light.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Light.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Medium";
-    src:url('../font/Alibaba-PuHuiTi-Medium.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Medium.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Regular";
-    src:url('../font/Alibaba-PuHuiTi-Regular.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Regular.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-HelveticaNeue";
-    src:url('../font/HelveticaNeue.ttc');
+    src: url('../font/HelveticaNeue.ttc');
 }
 
 /*************顶部导航栏开始**************/
 .headerBg {
-    height: 63px;
-    background: #f5f3f0;
+    height: 100px;
+    background: #efefef;
     position: fixed;
     z-index: 1000;
     border-bottom: 2px solid #ffc9b5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
 .headlineTitle {
     font-size: 3em;
     text-align: center;
@@ -53,9 +63,9 @@ body{
 }
 
 .navbar .nav>li>a {
-    font-size: 1.2em;
+    font-size: 22px;
     color: #333;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .navbar-inner {
@@ -76,9 +86,11 @@ body{
     font-size: 1.2em;
     color: #333;
 }
-#navList li{
+
+#navList li {
     position: relative;
 }
+
 #navList li a::before {
     content: "";
     position: absolute;
@@ -89,11 +101,13 @@ body{
     border-bottom: 2px solid #ff4d29;
     transition: 0.2s all linear;
 }
+
 #navList li a:hover::before {
     width: 40%;
     margin-left: 35%;
     left: 0;
 }
+
 #navList li a.active::before {
     content: "";
     position: absolute;
@@ -111,18 +125,22 @@ body{
 .navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
+
 /*************顶部导航栏结束**************/
 
 /*************加入我们开始**************/
 .aboutContainer {
-    padding-top: 8%;
-    background-color: #f5f3f0;
+    background-color: #efefef;
+    padding: 300px 100px;
+    box-sizing: border-box
 }
+
 .subTitle {
     margin: 0 2% 3% 1%;
     line-height: 1.2em;
     font-size: 7em;
 }
+
 .contactImgContainer {
     height: 1073px;
     background: url(../images/contact/1.jpg) center no-repeat;
@@ -150,31 +168,40 @@ body{
     background: orangered;
     vertical-align: middle;
 }
-.joinusContainer{
+
+.joinusContainer {
     margin-top: 51%;
     float: right;
     text-align: right;
     margin-right: 135px;
 }
-#joinus{
+
+#joinus {
     margin-bottom: 75px;
     font-size: 60px;
 }
+
 .customeImgContainer {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     height: 200px;
+    display: flex;
+    justify-content: space-between;
 }
-.morePositionContainer{
+
+.morePositionContainer {
     margin-left: 270px;
 }
-.positionBox{
+
+.positionBox {
     text-align: right;
     margin-top: 10%;
 }
-.positionText{
+
+.positionText {
     padding-bottom: 10px;
     border-bottom: 1px solid #ff4500;
 }
+
 .dotSmallIcon {
     display: inline-block;
     width: 30px;
@@ -183,12 +210,15 @@ body{
     background: orangered;
     vertical-align: middle;
 }
+
 .addressImg {
     height: 66px;
+    width: 400px;
     margin-top: 8%;
     background: url(../images/contact/2.png) left no-repeat;
     background-size: 66%;
 }
+
 .dividedLine {
     border-bottom: 2px solid #333;
 }
@@ -198,38 +228,45 @@ body{
     line-height: 2em;
     font-size: 2em;
 }
+
 .contactUsContainer {
     height: 700px;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;
 }
-.contactusBox{
-    height: 75%!important;
-    border-right: 1px solid #333!important;
-    margin: 70px!important;
+
+.contactusBox {
+    height: 75% !important;
+    border-right: 1px solid #333 !important;
+    margin: 70px !important;
 }
-.contactusText{
-    font-size:68px;
-    margin-left: -70px;
+
+.contactusText {
+    font-size: 68px;
+    line-height: normal;
 }
-.dotContainer{
+
+.dotContainer {
     text-align: right;
-    margin-bottom: 135px;
-    margin-top: 72px;
+    margin-bottom: 84px;
 }
-.workAddress{
+
+.workAddress {
     text-align: right;
     padding: 20px 0;
 }
-.workAddress h5{
+
+.workAddress h5 {
     margin-bottom: 20px
 }
+
 .subscrieImgContainer {
     height: 109px;
     margin-left: 0;
     background: url(../images/about/3.png) left no-repeat;
     background-size: 25%;
 }
+
 /*************加入我们结束**************/
 
 /*************底部样式开始**************/
@@ -238,11 +275,13 @@ body{
     margin-bottom: 10px;
     font-weight: normal;
 }
+
 .subscrieTitle {
     font-size: 2em;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     font-weight: normal;
 }
+
 .subscrieInco {
     display: inline-block;
     width: 23px;
@@ -250,75 +289,151 @@ body{
     margin-left: 18%;
     background-image: url(../images/home/subscire.png);
 }
+
 .noticeText {
-    padding-top: 5%;
+    padding-top: 100px;
     font-size: 12px;
     color: #333;
 }
+
 .dingyue {
-    font-size: 24px;
+    font-size: 40px;
     border: 2px solid #eea68e;
     width: fit-content;
     padding: 10px 13px;
-    border-radius: 10px;
+    width: 196px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 20px;
     margin-bottom: 30px;
     font-weight: bold;
     font-family: 'Al-Bold';
+    margin-top: 100px;
 }
-#userInfoBox{
+
+#userInfoBox {
     display: none;
 }
-#userInfoBox .inputNote{
+
+#userInfoBox .inputNote {
     background: transparent;
 }
-#userInfoBox input.inputNode{
+
+#userInfoBox input.inputNode {
     background: transparent;
     border: none;
     box-shadow: none;
     border-radius: 0;
     border-bottom: 1px solid #333;
 }
+
 .inWXContainer {
-    margin-left: 38%;
-    margin-top: 15%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    /* padding-right: 40px; */
 }
+
 .futureTitle {
-    font-size: 1.5em;
+    font-size: 16px;
     font-weight: normal;
+    margin: 0;
 }
+
 .futureInfo {
-    line-height: 40px;
-    font-size: 1.5em;
+    line-height: 24px;
+    font-size: 16px;
 }
+
 .leftIn {
     display: inline-block;
-    height: 80px;
-    width: 86px;
-    margin-right: 25%;
+    height: 40px;
+    width: 46px;
+    margin-right: 192px;
     background: url(../images/about/4.png) left no-repeat;
+    background-size: contain;
 }
+
 .leftIn a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
+
 .rightWX {
     display: inline-block;
-    height: 80px;
-    width: 86px;
+    height: 40px;
+    width: 46px;
     background: url(../images/about/5.png) left no-repeat;
+    background-size: contain;
 }
-#exampleInputNote{
+
+#exampleInputNote {
     width: 44%;
     margin-top: 2%;
 }
-.submitBtn{
+
+.submitBtn {
     background: #e8442f;
     color: #fff;
     margin: 10px;
     width: 41%;
 }
-#futureNode{
-    border-bottom: 1px solid #ff4d29; 
+
+#futureNode {
+    border-bottom: 1px solid #ff4d29;
 }
+
 /*************底部样式结束**************/
+/* 简历 */
+.jianli {
+    padding: 0 100px;
+}
+
+/* 联系 */
+.lianxi {
+    margin: 0 100px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.lianxiLeft {
+    width: 35%;
+    height: 100%;
+}
+
+.lianxiRight {
+    width: 65%;
+    border-left: 2px solid #000
+}
+
+#navList {
+    margin: 0 51px 0 0;
+}
+
+/* 底部 */
+.commonBottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+
+.navbar-logo {
+    width: 119px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+
+.navbar-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

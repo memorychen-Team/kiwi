@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     function initPageText() {
         var language = localStorage.getItem('language');
-        if (language == 'en' || language == null) {
+        if (language == 'en') {
             // 4-23
             $("#joinus").html(EN.joinus)
             $("#join_intro_one").html(EN.join_intro_one)
@@ -23,7 +23,7 @@ $(document).ready(function() {
             $("#futureNode").html(EN.future_one)
             $("#future_two").html(EN.future_two)
             $("#future_three").html(EN.future_three)
-        } else if (language == 'cn') {
+        } else if (language == 'cn'  || language == null) {
             // 4-23
             $("#bannerIntro").html(CN.compant_intro)
             $("#kiwilab_content").html(CN.kiwilab_content)

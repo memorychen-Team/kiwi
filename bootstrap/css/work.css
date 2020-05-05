@@ -1,97 +1,125 @@
 /*
 *阿里字体包
 */
-@font-face{
+@font-face {
     font-family: "Al-Bold";
-    src:url('../font/Alibaba-PuHuiTi-Bold.ttf');
-}
-@font-face{
-    font-family: "Al-Heavy";
-    src:url('../font/Alibaba-PuHuiTi-Heavy.ttf');
-}
-@font-face{
-    font-family: "Al-Ligth";
-    src:url('../font/Alibaba-PuHuiTi-Light.ttf');
-}
-@font-face{
-    font-family: "Al-Medium";
-    src:url('../font/Alibaba-PuHuiTi-Medium.ttf');
-}
-@font-face{
-    font-family: "Al-Regular";
-    src:url('../font/Alibaba-PuHuiTi-Regular.ttf');
-}
-@font-face{
-    font-family: "Al-HelveticaNeue";
-    src:url('../font/HelveticaNeue.ttc');
+    src: url('../font/Alibaba-PuHuiTi-Bold.ttf');
 }
 
-body{
+@font-face {
+    font-family: "Al-Heavy";
+    src: url('../font/Alibaba-PuHuiTi-Heavy.ttf');
+}
+
+@font-face {
+    font-family: "Al-Ligth";
+    src: url('../font/Alibaba-PuHuiTi-Light.ttf');
+}
+
+@font-face {
+    font-family: "Al-Medium";
+    src: url('../font/Alibaba-PuHuiTi-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Al-Regular";
+    src: url('../font/Alibaba-PuHuiTi-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Al-HelveticaNeue";
+    src: url('../font/HelveticaNeue.ttc');
+}
+
+body {
     line-height: none;
     background: #ededed;
 }
-body::-webkit-scrollbar { 
-    width: 0 !important 
+
+body::-webkit-scrollbar {
+    width: 0 !important
 }
+
 /******************顶部导航开始*******************/
 .headerBg {
     background: #0e0e0e;
     position: fixed;
     z-index: 1000;
 }
+
 .navbar {
     margin-bottom: 0;
 }
+
 .navbar-inner {
-    background: transparent;
+    background: #000;
     box-shadow: none;
     border: none;
     padding: 15px 0;
+    border-radius: 0;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
 }
-.headlineTitle {
-    font-size: 1.5em!important;
+
+/* .headlineTitle {
+    font-size: 1.5em !important;
     text-align: center;
     font-weight: bold;
     line-height: 30px;
     padding: 8px 25%;
-}
+} */
+
 /******************顶部导航结束*******************/
 /******************视频开始*******************/
 video::-webkit-media-controls {
-    display:none !important;
+    display: none !important;
     -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none; 
+    overflow: -moz-scrollbars-none;
 }
+
 .workVideoContainer {
     height: 952px;
     width: 100%;
     position: relative;
 }
-#videoBox{
+
+#videoBox {
     width: 100%;
     object-fit: cover;
 }
+
 /******************视频结束*******************/
 
 /**********************二级标题开始**********************/
 .navbar .brand {
     color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
 }
-.subTtitleBox{
+
+.subTtitleBox {
     box-shadow: none;
 }
-.logoBox{
+
+.logoBox {
     border-bottom: 1px solid #f1ecec;
 }
+
 .logoKiwi {
     display: inline-block;
     width: 119px;
     height: 64px;
     background: url(../images/work/logo.png) center no-repeat;
 }
+
 .navList li {
     margin-right: 25px;
 }
+
 .navbar .nav>.active>a,
 .navbar .nav>.active>a:hover,
 .navbar .nav>.active>a:focus {
@@ -100,10 +128,12 @@ video::-webkit-media-controls {
     font-size: 1.5em;
     color: #0c0707;
 }
-#navList li{
+
+#navList li {
     position: relative;
-    margin-right: 20px;
+    margin-right: 35px;
 }
+
 #navList li a::before {
     content: "";
     position: absolute;
@@ -114,11 +144,13 @@ video::-webkit-media-controls {
     border-bottom: 2px solid #ff4d29;
     transition: 0.2s all linear;
 }
+
 #navList li a:hover::before {
     width: 40%;
     margin-left: 35%;
     left: 0;
 }
+
 #navList li a.active::before {
     content: "";
     position: absolute;
@@ -136,13 +168,16 @@ video::-webkit-media-controls {
 .navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
+
 .navbar .nav>li>a {
     font-size: 1.5em;
     color: #292929;
 }
-.navbar{
-    margin-left: 75px;
+
+.navbar {
+    height: 100px;
 }
+
 .dotIcon {
     display: inline-block;
     width: 50px;
@@ -151,7 +186,8 @@ video::-webkit-media-controls {
     background: orangered;
     vertical-align: middle;
 }
-.kiwiBox{
+
+.kiwiBox {
     position: absolute;
     width: 100%;
     height: 280px;
@@ -160,24 +196,28 @@ video::-webkit-media-controls {
     line-height: 90px;
     font-family: 'Al-Bold';
 }
-.kiwiText{
+
+.kiwiText {
     font-size: 12em;
     text-align: left;
     width: 100%;
     color: #fff;
     padding-left: 2%;
 }
-.communicationText{
+
+.communicationText {
     font-size: 9em;
     text-align: left;
     width: 100%;
     color: #fff;
-    padding-left:2%;
+    padding-left: 2%;
 }
+
 .dotList {
     height: 40px;
     line-height: 40px;
 }
+
 .dotList span {
     display: inline-block;
     width: 15px;
@@ -186,7 +226,8 @@ video::-webkit-media-controls {
     vertical-align: middle;
     border-radius: 100%;
 }
-.workTitleBox{
+
+.workTitleBox {
     padding-left: 55px;
     font-size: 4em;
 }
@@ -204,21 +245,31 @@ a.headlineSubTitle:hover {
 .workContainerList {
     width: 100%;
     max-height: 3000px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     position: relative;
+    margin: 0;
 }
+
+.workContainerList li {
+    padding: 50px 30px;
+    display: flex;
+    box-sizing: border-box;
+}
+
 .workContainerList::-webkit-scrollbar {
     width: 4px;
 }
+
 .workContainerList::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
+
 .workContainerList::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .workContainerList li {
@@ -252,7 +303,7 @@ a.headlineSubTitle:hover {
 }
 
 div.tab-content {
-    overflow: hidden!important;
+    overflow: hidden !important;
 }
 
 .listTitle {
@@ -266,25 +317,36 @@ div.tab-content {
 }
 
 .workListContainer {
-    margin: 20px 10%;
+    margin: 20px 100px;
 }
 
 .imgBox {
-    float: left;
-    width: 35%;
+    /* float: left; */
+    /* width: 35%; */
     margin: 10px;
+    width: 408px;
+    height: 374px;
 }
 
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .detailBox {
-    float: left;
-    width: 40%;
+    /* float: left; */
+    width: 58%;
     margin: 10px;
 }
 
 .directBox {
-    float: left;
-    width: 18%;
+    /* float: left; */
+    /* width: 7%; */
+    width: 100px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .directionImg {
@@ -299,6 +361,12 @@ div.tab-content {
     width: 100%;
     height: 100%;
     color: #333;
+    border: 1px solid #fff;
+    padding: 0px 4px;
+    border-radius: 10px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
 }
 
 .directLink {
@@ -321,7 +389,7 @@ div.tab-content {
     background: orchid;
     position: fixed;
     top: 85%;
-    left:1%;
+    left: 1%;
     display: none;
     background: url(../images/work/up.png) center no-repeat;
 }
@@ -333,4 +401,42 @@ div.tab-content {
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 }
+
 /**********************up结束**********************/
+
+.headerBgTop {
+    display: flex;
+    width: 100%;
+    background: #efefef;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-bar-new {
+    display: flex;
+    align-items: center;
+}
+
+.headerBarNew {
+    height: 335px;
+}
+
+.headerBarNewTwo {
+    background-color: #efefef;
+    z-index: 1000;
+}
+
+.nav-fixedOne {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.workRadioListNew {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}

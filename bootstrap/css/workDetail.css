@@ -1,57 +1,79 @@
-﻿body{
+﻿body {
     background: #ededed;
 }
+
 /*
 *阿里字体包
 */
-@font-face{
+@font-face {
     font-family: "Al-Bold";
-    src:url('../font/Alibaba-PuHuiTi-Bold.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Bold.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Heavy";
-    src:url('../font/Alibaba-PuHuiTi-Heavy.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Heavy.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Ligth";
-    src:url('../font/Alibaba-PuHuiTi-Light.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Light.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Medium";
-    src:url('../font/Alibaba-PuHuiTi-Medium.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Medium.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Regular";
-    src:url('../font/Alibaba-PuHuiTi-Regular.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Regular.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-HelveticaNeue";
-    src:url('../font/HelveticaNeue.ttc');
+    src: url('../font/HelveticaNeue.ttc');
 }
+
 /******************header顶部导航样式开始*************************/
 .header {
-    height: 63px;
-    line-height: 63px;
-    padding: 0 50px;
+    height: 100px;
+    position: relative;
+    /* line-height: 63px; */
+    padding: 0 100px;
     font-size: 1.5em;
     color: #fff;
     background-color: #000;
-    border-bottom: 2px solid #e6e3dc;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: flex-end;
 }
-.detailTitle{
-    float: left;
-    font-size: 2em;
+
+.detailTitle {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 119px;
+    height: 63px;
 }
+
 .nav-bar {
-    float: right;
+    /* float: right; */
     height: 100%;
+
+}
+
+.header .nav-bar {
+    display: flex;
+    align-items: center;
 }
 
 .nav-bar a {
     vertical-align: middle;
     color: #fff;
-    padding: 5px;
-    margin-right: 25px;
+    /* padding: 5px; */
+    margin-right: 35px;
     text-decoration: none;
 }
 
@@ -64,10 +86,13 @@
     border-radius: 50%;
     margin: 0 1px;
 }
-.nav-bar a{
+
+.nav-bar a {
     position: relative;
-    margin-right: 20px;
+    /* margin-right: 20px; */
+    font-size: 22px;
 }
+
 .nav-bar a::before {
     content: "";
     position: absolute;
@@ -78,11 +103,13 @@
     border-bottom: 2px solid #ff4d29;
     transition: 0.2s all linear;
 }
+
 .nav-bar a:hover::before {
     width: 40%;
     margin-left: 35%;
     left: 0;
 }
+
 .nav-bar a.active::before {
     content: "";
     position: absolute;
@@ -102,49 +129,81 @@
 /******************banner样式开始*************************/
 .bannerContainer {
     height: 600px;
-    background: #171616;
+    background: #000;
     padding-top: 200px;
+    position: relative;
 }
+
 .headerBg {
     background-color: #000;
 }
-.bannerContainer h2 {
+
+.bannerContainer .lunboTitle {
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
 }
-.dateText{
+
+
+.dateText {
     color: #fff;
     border-bottom: 1px solid #fff;
-    margin: 0 5%;
-    margin-top: 135px;
+    position: absolute;
+    left: 7%;
+    width: 85%;
+    bottom: 160px;
 }
-.dateText h2{
+
+.dateText h2 {
     color: #fff;
     text-align: left;
+    font-size: 50px;
+    padding-bottom: 20px;
 }
-.activeResultText{
-    color: #fff;
-    text-align: right;
-    padding-right: 10%;
+
+.yuanquan {
+    position: absolute;
+    right: 7%;
+    top: 32%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: red;
 }
-.activeDescText{
+
+.activeDescText {
     color: #fff;
     padding-left: 10%;
 }
+
 /******************banner样式结束*************************/
 
 /**********************二级标题开始*******************************/
 .nav-bar2-container {
-    height: 80px;
-    line-height: 80px;
-    padding: 0 50px;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 100px;
     color: #000;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
 }
 
 .nav-bar2-container .nav-bar a {
     color: #000;
-    font-size: 1.5em;
+    font-size: 22px;
+}
+
+.nav-bar2-container .dot {
+    background-color: #000;
+}
+
+/* 
+.nav-bar2-container .nav-bar a.active::before {
+    top: 35px;
+} */
+
+/* .nav-bar2-container .nav-bar a:hover::before {
+    top: 35px;
 }
 
 .nav-bar2-container .nav-bar .dot {
@@ -155,7 +214,8 @@
     background-color: #000;
     border-radius: 50%;
     margin: 0 1px;
-}
+} */
+
 .navbar {
     margin-bottom: 0;
 }
@@ -200,26 +260,48 @@
 .dividerLine {
     margin: 0 6%;
 }
+
 /**********************二级标题结束*******************************/
 
 
 /**********************轮播开始*******************************/
 .swiperBox {
-    height: 630px;
-    margin-top: 50px;
+    height: 857px;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .swipeContainer {
-    height: 630px;
+    width: 1523px;
+    margin: auto;
+    position: relative;
+    z-index: 10000;
 }
+
+.allPlayVideo {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background: red;
+    border-radius: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 54px;
+    color: #000;
+}
+
 .swiper-container {
-    width: 100%;
-    height: 854px;
+    width: 1200px;
+    height: 675px;
 }
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #efefef;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -233,62 +315,118 @@
     -webkit-align-items: center;
     align-items: center;
 }
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.lunbo {
+    position: relative;
+    margin: 200px 0 150px;
+}
+
+.lunboTitle {
+    font-size: 66px;
+    font-family: Al-Bold;
+    line-height: initial;
+    letter-spacing: 11.1px;
+    position: absolute;
+    left: 7%;
+    top: 32%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev {
+    left: 100px;
+}
+
+.swiper-button-next {
+    right: 100px;
+}
+
 /*******************轮播结束***************************/
 
 /*******************活动背景样式开始***************************/
 .dateBox {
     border-bottom: 2px solid #333;
-    margin: 5% 15%;
+    margin: 0 100px;
     line-height: 40px;
 }
-.activeDesc{
-    margin: 16% 0;
+
+.dateBox h1 {
+    padding-left: 15px;
+    padding-bottom: 15px;
 }
-.activeContent{
+
+.activeDesc {
+    margin: 60px 0 150px;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+.activeContent {
     line-height: 38px;
 }
-.chinaAddMount{
+
+.chinaAddMount {
     font-size: 2.5em;
     color: orangered;
     font-weight: bold;
 }
-.chinaAddMountOne{
+
+.chinaAddMountOne {
     font-size: 2.5em;
     color: orangered;
     font-weight: bold;
 }
-.chinaAddMountTwo{
+
+.chinaAddMountTwo {
     font-size: 2.5em;
     color: orangered;
     font-weight: bold;
 }
-.chinaAddMountThree{
+
+.chinaAddMountThree {
     font-size: 2.5em;
     color: orangered;
     font-weight: bold;
 }
+
 /*******************活动背景样式结束***************************/
 
 /*******************更多项目样式开始***************************/
 .workContainerList {
     width: 100%;
     max-height: 1500px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     position: relative;
+    margin: 0;
 }
+
+.workContainerList li {
+    display: flex;
+    padding: 50px 30px;
+}
+
 .workContainerList::-webkit-scrollbar {
     width: 4px;
 }
+
 .workContainerList::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
+
 .workContainerList::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
+
 .workContainerList li {
     overflow: hidden;
     border-top: 1px solid #333;
@@ -299,25 +437,28 @@
 }
 
 .workListContainer {
-    margin: 20px 10%;
+    margin: 20px 100px;
 }
 
 .imgBox {
-    float: left;
+    /* float: left; */
     width: 35%;
     margin: 10px;
 }
 
 .detailBox {
-    float: left;
-    width: 40%;
+    /* float: left; */
+    width: 58%;
     margin: 10px;
 }
 
 .directBox {
-    float: left;
-    width: 18%;
+    /* float: left; */
+    width: 7%;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .directionImg {
@@ -332,6 +473,12 @@
     width: 100%;
     height: 100%;
     color: #333;
+    border: 1px solid #fff;
+    padding: 0px 4px;
+    border-radius: 10px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
 }
 
 .directLink {
@@ -339,6 +486,7 @@
     width: 100%;
     height: 100%;
 }
+
 /*******************更多项目结束***************************/
 
 /*******************up 样式开始***************************/
@@ -352,9 +500,9 @@
     height: 122px;
     background: orchid;
     position: fixed;
-    z-index: 500;
-    bottom: 5%;
-    left: 1%;
+    z-index: 50000;
+    bottom: 26%;
+    right: 1%;
     background: url(../images/work/up.png) center no-repeat;
 }
 
@@ -365,6 +513,7 @@
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 }
+
 /*******************up 样式结束***************************/
 
 
@@ -375,11 +524,13 @@
     margin-bottom: 10px;
     font-weight: normal;
 }
+
 .subscrieTitle {
     font-size: 2em;
     margin-bottom: 40px;
     font-weight: normal;
 }
+
 .subscrieInco {
     display: inline-block;
     width: 23px;
@@ -387,11 +538,13 @@
     margin-left: 18%;
     background-image: url(../images/home/subscire.png);
 }
+
 .noticeText {
-    padding-top: 15%;
+    padding-top: 100px;
     font-size: 12px;
     color: #333;
 }
+
 .dingyue {
     font-size: 24px;
     border: 2px solid #eea68e;
@@ -400,60 +553,154 @@
     border-radius: 10px;
     margin-bottom: 30px;
 }
-#userInfoBox{
+
+#userInfoBox {
     display: none;
 }
-#userInfoBox .inputNote{
+
+#userInfoBox .inputNote {
     background: #ededed;
 }
-#userInfoBox input.inputNode{
+
+#userInfoBox input.inputNode {
     background: #ededed;
     border: none;
     box-shadow: none;
     border-radius: 0;
     border-bottom: 1px solid #333;
 }
+
 .inWXContainer {
-    margin-left: 38%;
-    margin-top: 15%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
 }
+
 .futureTitle {
-    font-size: 1.5em;
+    font-size: 16px;
     font-weight: normal;
 }
+
 .futureInfo {
-    line-height: 40px;
-    font-size: 1.5em;
+    line-height: 24px;
+    font-size: 16px;
 }
+
 .leftIn {
     display: inline-block;
-    height: 80px;
-    width: 86px;
-    margin-right: 22%;
+    height: 40px;
+    width: 46px;
+    margin-right: 95px;
     background: url(../images/about/4.png) left no-repeat;
+    background-size: contain;
 }
+
 .leftIn a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
+
 .rightWX {
     display: inline-block;
-    height: 80px;
-    width: 86px;
+    height: 40px;
+    width: 46px;
     background: url(../images/about/5.png) left no-repeat;
+    background-size: contain;
 }
-#exampleInputNote{
+
+#exampleInputNote {
     width: 44%;
     margin-top: 2%;
 }
-.submitBtn{
+
+.submitBtn {
     background: #e8442f;
     color: #fff;
     margin: 10px;
     width: 41%;
 }
-#futureNode{
-    border-bottom: 1px solid #ff4d29; 
+
+#futureNode {
+    border-bottom: 1px solid #ff4d29;
 }
+
 /*******************底部样式结束***************************/
+
+.justify-bottom {
+    display: flex;
+    padding: 0px 130px;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+
+.newRowFluidCommon {
+    width: 50%;
+}
+
+.dingWei {
+    margin-top: 100px;
+}
+
+.lineHeight {
+    height: 20px;
+    background-color: #000;
+}
+
+.detailContainer {
+    display: flex;
+    margin: 0 100px 200px;
+}
+
+.detailContainer01 {
+    width: 40%;
+    padding: 0 100px 0 40px;
+}
+
+.detailContainer02 {
+    width: 60%;
+    position: relative;
+}
+
+.activeResultText {
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.activeResult {
+    font-size: 24px;
+    font-family: Al-Bold;
+    position: absolute;
+    right: 45px;
+    top: 60px;
+}
+
+.activeResult::after {
+    content: "";
+    width: 18px;
+    height: 20px;
+    background-image: url(../images/workDetail/123.png);
+    background-size: contain;
+    position: absolute;
+    right: -32px;
+    top: 0;
+}
+
+.detailContainerOne01 {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.detailContainerOne02 {
+    position: absolute;
+    bottom: 60px;
+    left: 218px;
+}

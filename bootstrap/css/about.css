@@ -1,42 +1,50 @@
-﻿body{
+﻿body {
     background: #efefef;
 }
 
 /*
 *阿里字体包
 */
-@font-face{
+@font-face {
     font-family: "Al-Bold";
-    src:url('../font/Alibaba-PuHuiTi-Bold.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Bold.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Heavy";
-    src:url('../font/Alibaba-PuHuiTi-Heavy.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Heavy.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Ligth";
-    src:url('../font/Alibaba-PuHuiTi-Light.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Light.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Medium";
-    src:url('../font/Alibaba-PuHuiTi-Medium.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Medium.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-Regular";
-    src:url('../font/Alibaba-PuHuiTi-Regular.ttf');
+    src: url('../font/Alibaba-PuHuiTi-Regular.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: "Al-HelveticaNeue";
-    src:url('../font/HelveticaNeue.ttc');
+    src: url('../font/HelveticaNeue.ttc');
 }
 
 /********************顶部导航样式开始*************************/
 .headerBg {
-    height: 63px;
-    background: #f5f3f0;
+    height: 100px;
+    background: #efefef;
     position: fixed;
     z-index: 1000;
     border-bottom: 2px solid #ffc9b5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .headlineTitle {
@@ -55,17 +63,24 @@
 }
 
 .navbar .nav>li>a {
-    font-size: 1.2em;
+    font-size: 22px;
     color: #333;
-    font-weight: bold;
+    font-weight: 400;
+}
+
+#navList {
+    margin: 0 51px 0 0;
 }
 
 .navbar-inner {
     background: transparent;
     box-shadow: none;
     border: none;
-    padding: 10px 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
+
 .navbar .nav>.active>a,
 .navbar .nav>.active>a:hover,
 .navbar .nav>.active>a:focus {
@@ -74,9 +89,11 @@
     font-size: 1.2em;
     color: #333;
 }
-#navList li{
+
+#navList li {
     position: relative;
 }
+
 #navList li a::before {
     content: "";
     position: absolute;
@@ -87,11 +104,13 @@
     border-bottom: 2px solid #ff4d29;
     transition: 0.2s all linear;
 }
+
 #navList li a:hover::before {
     width: 40%;
     margin-left: 38%;
     left: 0;
 }
+
 #navList li a.active::before {
     content: "";
     position: absolute;
@@ -109,24 +128,29 @@
 .navbar .nav.languageList li a {
     padding: 10px 4px 10px;
 }
+
 /********************顶部导航样式结束*************************/
 
 /********************关于我们样式开始*************************/
 .aboutContainer {
-    background-color: #f5f3f0;
+    background-color: #efefef;
 }
+
 .subTitle {
-    margin: 3% 2% 3% 4%;
+    margin: 250px 140px;
     line-height: 1.3em;
     font-size: 5em;
 }
+
 .dotList {
     height: 40px;
     line-height: 40px;
 }
+
 .introductionInfo {
     margin: 10% 1% 10% 45%;
 }
+
 .dotList span {
     display: inline-block;
     width: 10px;
@@ -154,31 +178,37 @@
 .customerInfo {
     margin: 5% 12% 4% 4%;
 }
+
 .abooutImgContainer {
     height: 640px;
     background: url(../images/about/1.jpg) center no-repeat;
     background-size: 100%;
 }
+
 .customeImgContainer {
     height: 613px;
     margin-top: 150px;
     background: url(../images/about/2.png) center no-repeat;
 }
-.honorContainer{
+
+.honorContainer {
     width: 100%;
-    margin:0;
+    margin: 0;
     margin-top: 400px;
 }
-.honorText{
-    width:100%;
+
+.honorText {
+    width: 100%;
     margin: 0 auto;
     padding-left: 70px;
     /* border-bottom: 1px solid #000; */
     padding-bottom: 100px;
 }
+
 .dividedLine {
     border-bottom: 2px solid #333;
 }
+
 /********************关于我们结束*************************/
 
 /********************底部样式开始*************************/
@@ -187,11 +217,13 @@
     margin-bottom: 10px;
     font-weight: normal;
 }
+
 .subscrieTitle {
     font-size: 2em;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     font-weight: normal;
 }
+
 .subscrieInco {
     display: inline-block;
     width: 23px;
@@ -199,75 +231,128 @@
     margin-left: 18%;
     background-image: url(../images/home/subscire.png);
 }
+
 .noticeText {
     padding-top: 5%;
     font-size: 12px;
     color: #333;
 }
+
 .dingyue {
-    font-size: 24px;
+    font-size: 40px;
     border: 2px solid #eea68e;
     width: fit-content;
     padding: 10px 13px;
-    border-radius: 10px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    width: 196px;
+    border-radius: 20px;
     margin-bottom: 30px;
     font-weight: bold;
     font-family: 'Al-Bold';
+    margin-top: 100px;
 }
-#userInfoBox{
+
+#userInfoBox {
     display: none;
 }
-#userInfoBox .inputNote{
+
+#userInfoBox .inputNote {
     background: transparent;
 }
-#userInfoBox input.inputNode{
+
+#userInfoBox input.inputNode {
     background: transparent;
     border: none;
     box-shadow: none;
     border-radius: 0;
     border-bottom: 1px solid #333;
 }
+
 .inWXContainer {
-    margin-left: 40%;
-    margin-top: 15%;
+    display: flex;
+    justify-content: flex-end;
+    /* padding-right: 40px; */
+    margin-top: 100px;
 }
+
 .futureTitle {
-    font-size: 1.5em;
+    font-size: 16px;
     font-weight: normal;
 }
+
 .futureInfo {
-    line-height: 40px;
-    font-size: 1.5em;
+    line-height: 24px;
+    font-size: 16px;
 }
+
 .leftIn {
     display: inline-block;
-    height: 80px;
-    width: 86px;
-    margin-right: 25%;
+    height: 40px;
+    width: 46px;
+    margin-right: 192px;
     background: url(../images/about/4.png) left no-repeat;
+    background-size: contain;
 }
+
 .leftIn a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
+
 .rightWX {
     display: inline-block;
-    height: 80px;
-    width: 86px;
+    height: 40px;
+    width: 46px;
     background: url(../images/about/5.png) left no-repeat;
+    background-size: contain;
 }
-#exampleInputNote{
+
+#exampleInputNote {
     width: 44%;
     margin-top: 2%;
 }
-.submitBtn{
+
+.submitBtn {
     background: #e8442f;
     color: #fff;
     margin: 10px;
     width: 41%;
 }
-#futureNode{
-    border-bottom: 1px solid #ff4d29; 
+
+#futureNode {
+    border-bottom: 1px solid #ff4d29;
 }
+
 /********************底部样式结束*************************/
+
+
+
+.nav-header {}
+
+.navbar-logo {
+    width: 119px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+
+.navbar-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* 底部 */
+.commonBotton {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 180px;
+    background: #efefef;
+    margin-bottom: 100px;
+}

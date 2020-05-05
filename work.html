@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>work</title>
@@ -13,39 +14,37 @@
     <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-    <div>
-        <div class="row-fluid headerBg">
-            <div class="span2">
-                <div class="navbar navbarBg">
-                    <div class="navbar-inner headlineTitle">
-                        <a class="brand headlineTitle" href="./home.html">KIWI</a>
-                    </div>
-                </div>
-            </div>
+    <div class="navbar navbarBg">
+        <div class="navbar-inner headlineTitle">
+            <a class="brand headlineTitle" href="./home.html">
+                <img src="./bootstrap/images/logobai.png" alt="">
+            </a>
         </div>
-        <div class="row-fluid workVideoContainer">
-            <div class="kiwiBox">
-                <div class="kiwiText">KIWI</div>
-                <br>
-                <h3 class="communicationText">COMMUNICATIONS</H3>
-            </div>
-            <video controls="controls" class='videoStyle' autoplay="autoplay" style="object-fit: cover;width: 1920px;height: 952px;" loop id="videoBox">
-                <source src="bootstrap/video/2.mp4" type="video/mp4" />
-                您的浏览器不支持 video 标签。
-            </video>
+    </div>
+    <div class="row-fluid workVideoContainer">
+        <div class="kiwiBox">
+            <div class="kiwiText">KIWI</div>
+            <br>
+            <h3 class="communicationText">COMMUNICATIONS</H3>
         </div>
-        <div class="row-fluid logoBox">
-            <div class="offset1 span2">
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <span class="logoKiwi"></span>
-                    </div>
+        <video controls="controls" class='videoStyle' autoplay="autoplay" muted
+            style="object-fit: cover;width: 1920px;height: 952px;" loop id="videoBox">
+            <source src="bootstrap/video/2.mp4" type="video/mp4" />
+            您的浏览器不支持 video 标签。
+        </video>
+    </div>
+    <div class="headerBarNew">
+        <div class="headerBarNewTwo">
+            <div class="headerBgTop">
+                <div class="navbar nav-bar-new">
+                    <span class="logoKiwi">
+                        <img src="./bootstrap/images/logohei.png" alt="">
+                    </span>
                 </div>
-            </div>
-            <div class="offset4 span5">
-                <div class="navbar">
-                    <div class="navbar-inner subTtitleBox">
+                <div class="">
+                    <div class="navbar nav-bar-new">
                         <ul class="nav" id="navList">
                             <li><a href="./home.html">HOME</a></li>
                             <li><a class="active" href="./work.html">WORK</a></li>
@@ -59,161 +58,128 @@
                         </ul>
                     </div>
                 </div>
+
+            </div>
+            <div class="row-fluid" style="margin:2.5% 0;">
+                <div class="offset1 span4">
+                    <h2 class="workTitleBox">WORK</h2>
+                </div>
+                <div class="offset5 span1">
+                    <span class="dotIcon"></span>
+                </div>
+            </div>
+            <div class="row-fluid" style="margin:50px 0 20px;">
+                <div class="workRadioListNew">
+                    <form action="" id="workRadioList">
+                        <label><input name="radioList" type="radio" checked value="" />全部</label>
+                        <label><input name="radioList" type="radio" value="" />整合营销</label>
+                        <label><input name="radioList" type="radio" value="" />公关活动</label>
+                        <label><input name="radioList" type="radio" value="" />社会化营销</label>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="row-fluid" style="margin:2.5% 0;">
-            <div class="offset1 span4">
-                <h2 class="workTitleBox">WORK</h2>
-            </div>
-            <div class="offset5 span1">
-                <span class="dotIcon"></span>
-            </div>
-        </div>
-        <div class="row-fluid" style="margin:2.5% 0;">
-            <div class="offset8 span4">
-                <form action="" id="workRadioList"> 
-                    <label><input name="radioList" type="radio" checked value="" />全部</label> 
-                    <label><input name="radioList" type="radio" value="" />整合营销</label> 
-                    <label><input name="radioList" type="radio" value="" />公关活动</label> 
-                    <label><input name="radioList" type="radio" value="" />社会化营销</label> 
-                </form> 
-            </div>
-        </div>
+    </div>
+    <div>
         <div class="workListContainer">
             <ul class="workContainerList">
                 <li aos="fade-up">
-                     <div class="imgBox">
-                         <a href="./workDetail.html" class="directLink">
-                             <img src="bootstrap/images/work/1.jpg" alt="">
-                         </a>
-                     </div>
-                     <div class="detailBox">
+                    <div class="imgBox">
+                        <a href="./workDetail.html" class="directLink">
+                            <img src="bootstrap/images/work/1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="detailBox">
                         <h2>酒店首映有礼</h2>
                         <h4>(北京、上海、西安)</h4>
-                        <h4 style="margin-top: 35%;">2020-04-19</h4>
-                     </div>
-                     <div class="directBox">
+                        <h4 style="margin-top: 34%;">2020-04-19</h4>
+                    </div>
+                    <div class="directBox">
+                        <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
+                        <h4>
+                            <a href="./workDetail.html" class="learnMore">Learn more
+                            </a>
+                        </h4>
+                    </div>
+                </li>
+                <li aos="fade-up">
+                    <div class="imgBox">
+                        <a href="./workDetail.html" class="directLink">
+                            <img src="bootstrap/images/work/2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="detailBox">
+                        <h2>皇家加勒比</h2>
+                        <h2>海洋光谱号首航</h2>
+                        <h4 style="margin-top: 34%;">2020-04-19</h4>
+                    </div>
+                    <div class="directBox">
                         <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
                         <h4 style="margin-top: 85%;">
                             <a href="./workDetail.html" class="learnMore">Learn more
                             </a>
                         </h4>
-                     </div>
-                </li>
-                <li aos="fade-up">
-                    <div class="imgBox">
-                        <a href="./workDetail.html" class="directLink">
-                            <img src="bootstrap/images/work/1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="detailBox">
-                       <h2>酒店首映有礼</h2>
-                       <h4>(北京、上海、西安)</h4>
-                       <h4 style="margin-top: 35%;">2020-04-19</h4>
-                    </div>
-                    <div class="directBox">
-                       <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
-                       <h4 style="margin-top: 85%;">
-                           <a href="./workDetail.html" class="learnMore">Learn more
-                           </a>
-                       </h4>
                     </div>
                 </li>
                 <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
-                            <img src="bootstrap/images/work/1.jpg" alt="">
+                            <img src="bootstrap/images/work/3.jpg" alt="">
                         </a>
                     </div>
                     <div class="detailBox">
-                       <h2>酒店首映有礼</h2>
-                       <h4>(北京、上海、西安)</h4>
-                       <h4 style="margin-top: 35%;">2020-04-19</h4>
+                        <h2>新加坡圣淘沙名胜世界</h2>
+                        <h2>x《我们相爱吧》</h2>
+                        <h4 style="margin-top: 34%;">2020-04-19</h4>
                     </div>
                     <div class="directBox">
-                       <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
-                       <h4 style="margin-top: 85%;">
-                           <a href="./workDetail.html" class="learnMore">Learn more
-                           </a>
-                       </h4>
+                        <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
+                        <h4 style="margin-top: 85%;">
+                            <a href="./workDetail.html" class="learnMore">Learn more
+                            </a>
+                        </h4>
                     </div>
                 </li>
                 <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
-                            <img src="bootstrap/images/work/1.jpg" alt="">
+                            <img src="bootstrap/images/work/8.jpg" alt="">
                         </a>
                     </div>
                     <div class="detailBox">
-                       <h2>酒店首映有礼</h2>
-                       <h4>(北京、上海、西安)</h4>
-                       <h4 style="margin-top: 35%;">2020-04-19</h4>
+                        <h2>万丽酒店品牌</h2>
+                        <h2>携手菜建雅 全情演绎</h2>
+                        <!-- <h2>"夜·灵感·万丽"</h2> -->
+                        <h4 style="margin-top: 34%;">2020-04-19</h4>
                     </div>
                     <div class="directBox">
-                       <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
-                       <h4 style="margin-top: 85%;">
-                           <a href="./workDetail.html" class="learnMore">Learn more
-                           </a>
-                       </h4>
+                        <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
+                        <h4 style="margin-top: 85%;">
+                            <a href="./workDetail.html" class="learnMore">Learn more
+                            </a>
+                        </h4>
                     </div>
                 </li>
                 <li aos="fade-up">
                     <div class="imgBox">
                         <a href="./workDetail.html" class="directLink">
-                            <img src="bootstrap/images/work/1.jpg" alt="">
+                            <img src="bootstrap/images/work/5.jpg" alt="">
                         </a>
                     </div>
                     <div class="detailBox">
-                       <h2>酒店首映有礼</h2>
-                       <h4>(北京、上海、西安)</h4>
-                       <h4 style="margin-top: 35%;">2020-04-19</h4>
+                        <h2>万豪国际年度</h2>
+                        <h2>奢华晚宴MILUX</h2>
+                        <h4 style="margin-top: 34%;">2020-04-19</h4>
                     </div>
                     <div class="directBox">
-                       <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
-                       <h4 style="margin-top: 85%;">
-                           <a href="./workDetail.html" class="learnMore">Learn more
-                           </a>
-                       </h4>
+                        <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
+                        <h4 style="margin-top: 85%;">
+                            <a href="./workDetail.html" class="learnMore">Learn more
+                            </a>
+                        </h4>
                     </div>
                 </li>
-                <li aos="fade-up">
-                    <div class="imgBox">
-                        <a href="./workDetail.html" class="directLink">
-                            <img src="bootstrap/images/work/1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="detailBox">
-                       <h2>酒店首映有礼</h2>
-                       <h4>(北京、上海、西安)</h4>
-                       <h4 style="margin-top: 35%;">2020-04-19</h4>
-                    </div>
-                    <div class="directBox">
-                       <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
-                       <h4 style="margin-top: 85%;">
-                           <a href="./workDetail.html" class="learnMore">Learn more
-                           </a>
-                       </h4>
-                    </div>
-                </li>
-                <li aos="fade-up">
-                    <div class="imgBox">
-                        <a href="./workDetail.html" class="directLink">
-                            <img src="bootstrap/images/work/1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="detailBox">
-                       <h2>酒店首映有礼</h2>
-                       <h4>(北京、上海、西安)</h4>
-                       <h4 style="margin-top: 35%;">2020-04-19</h4>
-                    </div>
-                    <div class="directBox">
-                       <a href="./workDetail.html" class="directLink"><span class="directionImg"></span></a>
-                       <h4 style="margin-top: 85%;">
-                           <a href="./workDetail.html" class="learnMore">Learn more
-                           </a>
-                       </h4>
-                    </div>
-                </li>
+                
             </ul>
             <span id='goBackUp' class="upImgIcon"></span>
         </div>
@@ -226,6 +192,29 @@
             duration: 1000
         });
         hljs.initHighlightingOnLoad();
+
+
+        $(window).scroll(function () {
+            var srollPos = $('.headerBarNew').offset().top //div距离顶部的距离
+            let scrollTop =
+                document.documentElement.scrollTop || document.body.scrollTop
+            let clientHeight =
+                document.documentElement.clientHeight || document.body.clientHeight
+            let scrollHeight =
+                document.documentElement.scrollHeight || document.body.scrollHeight
+            console.log(scrollTop)
+            console.log(srollPos)
+            if (scrollTop >= srollPos) {
+                $('.headerBarNewTwo').addClass('nav-fixedOne')
+
+
+            } else {
+                $('.headerBarNewTwo').removeClass('nav-fixedOne')
+                // $('.nav-flxed-one').css('padding-right', '0rem')
+                // $('.nav-flxed-one').css('padding-left', '0rem')
+            }
+        })
     </script>
 </body>
+
 </html>

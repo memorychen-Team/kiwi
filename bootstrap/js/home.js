@@ -1,34 +1,34 @@
-﻿$(document).ready(function() {
+﻿$(document).ready(function () {
     // 轮播
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 80,
-        speed: 2000,
-        loop: true,
-        auto: true,
-        autoplayDisableOnInteraction : true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-    });
+    //     var swiper = new Swiper('.swiper-container', {
+    //         slidesPerView: 'auto',
+    //         spaceBetween: 80,
+    //         speed: 2000,
+    //         loop: true,
+    //         auto: true,
+    //         autoplayDisableOnInteraction : true,
+    //         autoplay: {
+    //             delay: 2000,
+    //             disableOnInteraction: false,
+    //         },
+    //         pagination: {
+    //           el: '.swiper-pagination',
+    //           clickable: true,
+    //         },
+    //     });
     handleClickEvent();
     initPageText();
 
     function handleClickEvent() {
-        $("#chinese").click(function() {
+        $("#chinese").click(function () {
             localStorage.setItem('language', 'cn');
             initPageText();
         });
-        $("#english").click(function() {
+        $("#english").click(function () {
             localStorage.setItem('language', 'en');
             initPageText();
         });
-        $("#navList li").click(function() {
+        $("#navList li").click(function () {
             $("#navList li").removeClass('active');
             $(this).addClass('active');
         });
@@ -36,7 +36,7 @@
 
     function initPageText() {
         var language = localStorage.getItem('language');
-        if (language == 'en' || language == null) {
+        if (language == 'en') {
             // $('#headline').html(EN.headline);
             $('#subtitle').html(EN.subtitle);
             $('#brandStrategy').html(EN.brandStrategy);
@@ -67,7 +67,7 @@
             $("#futureNode").html(EN.future_one)
             $("#future_two").html(EN.future_two)
             $("#future_three").html(EN.future_three)
-        } else if (language == 'cn') {
+        } else if (language == 'cn' || language == null) {
             $('#headline').html(CN.headline);
             $('#subtitle').html(CN.subtitle);
             $('#brandStrategy').html(CN.brandStrategy);
@@ -101,7 +101,7 @@
         }
     }
     // 订阅
-    $("#subscribeBtn").click(function(e) {
+    $("#subscribeBtn").click(function (e) {
         $("#userInfoBox").toggle();
     });
 });
